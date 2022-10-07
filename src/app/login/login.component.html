@@ -1,0 +1,11 @@
+<h1>Login</h1>
+<div class="inputDiv">
+  <input type="text" placeholder="Username" [(ngModel)]="username">
+</div>
+<div>
+  <input type="text" placeholder="Password" [(ngModel)]="password">
+</div>
+<div class="buttonDiv">
+  <button class="pure-button pure-button-primary" (click)="login()">Login</button><br>
+  <button class="pure-button" (click)="register()">Create Account</button>
+</div>
