@@ -16,7 +16,6 @@ export class AppComponent {
   constructor(private data: DataService) {
     this.sub = this.data.$isLoggedIn.subscribe((status) => {
       this.isLoggedIn = status;
-      console.log(this.isLoggedIn);
     });
   }
 

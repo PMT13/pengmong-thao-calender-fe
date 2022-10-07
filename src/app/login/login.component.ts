@@ -21,12 +21,10 @@ export class LoginComponent implements OnInit,OnDestroy {
   constructor(private data: DataService, private httpService: HttpService ) {
     this.sub = this.data.$accountList.subscribe((accounts) => {
       this.accountList = accounts;
-      console.log(this.accountList);
     });
   }
 
   ngOnInit(): void {
-    console.log("Init: " + this.accountList);
   }
 
   ngOnDestroy() {
@@ -65,13 +63,13 @@ export class LoginComponent implements OnInit,OnDestroy {
         id: uuidv4(),
         username:this.username,
         password:this.password,
-        event: [],
+        events: [],
         invitations: []
       }
     this.httpService.addAccount(newUser).pipe(first()).subscribe({
       next: () => {
         this.data.setLoginStatus(true);
-        this.data.setUser(newUser);
+        this.data.setNewUser(newUser);
       },
       error: (err) => {
         alert(err);

@@ -5,6 +5,5 @@ export interface IEvent{
   name: string,
   date: string,
   description: string,
-  creator: IAccount,
-  invited: IAccount[]
+  creator: IAccount
 }

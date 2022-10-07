@@ -10,7 +10,7 @@ export class DataService {
 
   private accountList!: IAccount[];
   private isLoggedIn!: boolean;
-  private user: IAccount | null;
+  private user!: IAccount;
 
   $accountList: Subject<IAccount[]> = new Subject<IAccount[]>();
   $isLoggedIn: Subject<boolean> = new Subject<boolean>();
@@ -19,7 +19,6 @@ export class DataService {
   constructor(private httpService: HttpService) {
     this.getAccounts();
     this.isLoggedIn = false;
-    this.user = null;
   }
 
   // Retrieve all the accounts from the db.json file
@@ -35,8 +34,18 @@ export class DataService {
     })
   }
 
+  getUser(){
+    return this.user;
+  }
+
   // Set a new user when someone logs in
   setUser(account:IAccount){
+    this.user = account;
+    this.$user.next(this.user);
+  }
+
+  // Set a new user when someone creates an account and add it to the accounts list
+  setNewUser(account:IAccount){
     this.user = account;
     this.accountList.push(this.user);
     this.$user.next(this.user);

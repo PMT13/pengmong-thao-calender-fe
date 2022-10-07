@@ -4,6 +4,6 @@ export interface IAccount{
   id: string,
   username: string,
   password: string,
-  event: IEvent[],
+  events: IEvent[],
   invitations: IEvent[]
 }

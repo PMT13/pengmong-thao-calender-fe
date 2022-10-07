@@ -1,83 +1,72 @@
 {
   "accounts": [
     {
-      "id": "f48430e8-d20e-4735-838e-19a1583221c7",
-      "username": "username",
-      "password": "password",
-      "events": {},
-      "invitations": {}
-    },
-    {
       "id": "12b3a3e8-27a6-476e-8c69-33bbd6045c93",
       "username": "peng",
       "password": "thao",
-      "events": {},
-      "invitations": {}
-    },
-    {
-      "id": "8d0f5794-efcd-4065-ae2a-89494065cdd5",
-      "username": "pengmong",
-      "password": "thao",
-      "events": {},
-      "invitations": {}
+      "events": [
+        {
+          "id": "2",
+          "creator": "12b3a3e8-27a6-476e-8c69-33bbd6045c93",
+          "name": "ITS A ME, PENG!",
+          "date": "10/7/2022",
+          "description": "RANDOM WORD JAJAJAJAJAWWWWWWWWW"
+        }
+      ],
+      "invitations": []
     },
     {
       "id": "394ea744-97cc-40b7-ae1c-efdfd27902c9",
       "username": "new",
       "password": "guy",
-      "event": [],
-      "invitations": []
+      "events": [
+        {
+          "id": "1",
+          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9",
+          "name": "IM JUST A NEW GUY",
+          "date": "10/7/2022",
+          "description": "RANDOM WORD JAJAJAJAJAWWWWWWWWW"
+        }
+      ],
+      "invitations": [
+        {
+          "id": "2",
+          "creator": "12b3a3e8-27a6-476e-8c69-33bbd6045c93",
+          "name": "ITS A ME, PENG!",
+          "date": "10/7/2022",
+          "description": "RANDOM WORD JAJAJAJAJAWWWWWWWWW"
+        }
+      ]
     },
     {
       "id": "31733a0e-72a3-43c0-af50-b14f19a6578b",
       "username": "1",
       "password": "1",
-      "event": [],
-      "invitations": []
-    }
-  ],
-  "events": [
-    {
-      "id": "0",
-      "name": "Do project",
-      "date": "10/7/2022",
-      "description": "Working on my Angular Calender project",
-      "creator": {
-        "id": "f48430e8-d20e-4735-838e-19a1583221c7",
-        "username": "username",
-        "password": "password",
-        "events": {},
-        "invitations": {}
-      },
-      "invited": {}
-    },
-    {
-      "id": "1",
-      "name": "Do project 1",
-      "date": "10/7/2022",
-      "description": "Working on my Angular project",
-      "creator": {
-        "id": "8d0f5794-efcd-4065-ae2a-89494065cdd5",
-        "username": "pengmong",
-        "password": "thao",
-        "events": {},
-        "invitations": {}
-      },
-      "invited": {}
-    },
-    {
-      "id": "2",
-      "name": "Do project 2",
-      "date": "10/7/2022",
-      "description": "Working on my Calender project",
-      "creator": {
-        "id": "f48430e8-d20e-4735-838e-19a1583221c7",
-        "username": "username",
-        "password": "password",
-        "events": {},
-        "invitations": {}
-      },
-      "invited": {}
+      "events": [
+        {
+          "id": "0",
+          "creator": "31733a0e-72a3-43c0-af50-b14f19a6578b",
+          "name": "ONE ONE WORK",
+          "date": "10/7/2022",
+          "description": "RANDOM WORD JAJAJAJAJAWWWWWWWWW"
+        }
+      ],
+      "invitations": [
+        {
+          "id": "2",
+          "creator": "12b3a3e8-27a6-476e-8c69-33bbd6045c93",
+          "name": "ITS A ME, PENG!",
+          "date": "10/7/2022",
+          "description": "RANDOM WORD JAJAJAJAJAWWWWWWWWW"
+        },
+        {
+          "id": "1",
+          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9",
+          "name": "IM JUST A NEW GUY",
+          "date": "10/7/2022",
+          "description": "RANDOM WORD JAJAJAJAJAWWWWWWWWW"
+        }
+      ]
     }
   ]
 }
