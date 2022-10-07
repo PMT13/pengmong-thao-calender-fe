@@ -1,0 +1,69 @@
+{
+  "accounts": [
+    {
+      "id": "f48430e8-d20e-4735-838e-19a1583221c7",
+      "username": "username",
+      "password": "password",
+      "events": {},
+      "invitations": {}
+    },
+    {
+      "id": "12b3a3e8-27a6-476e-8c69-33bbd6045c93",
+      "username": "peng",
+      "password": "thao",
+      "events": {},
+      "invitations": {}
+    },
+    {
+      "id": "8d0f5794-efcd-4065-ae2a-89494065cdd5",
+      "username": "pengmong",
+      "password": "thao",
+      "events": {},
+      "invitations": {}
+    }
+  ],
+  "events": [
+    {
+      "id": "0",
+      "name": "Do project",
+      "date": "10/7/2022",
+      "description": "Working on my Angular Calender project",
+      "creator": {
+        "id": "f48430e8-d20e-4735-838e-19a1583221c7",
+        "username": "username",
+        "password": "password",
+        "events": {},
+        "invitations": {}
+      },
+      "invited": {}
+    },
+    {
+      "id": "1",
+      "name": "Do project 1",
+      "date": "10/7/2022",
+      "description": "Working on my Angular project",
+      "creator": {
+        "id": "8d0f5794-efcd-4065-ae2a-89494065cdd5",
+        "username": "pengmong",
+        "password": "thao",
+        "events": {},
+        "invitations": {}
+      },
+      "invited": {}
+    },
+    {
+      "id": "2",
+      "name": "Do project 2",
+      "date": "10/7/2022",
+      "description": "Working on my Calender project",
+      "creator": {
+        "id": "f48430e8-d20e-4735-838e-19a1583221c7",
+        "username": "username",
+        "password": "password",
+        "events": {},
+        "invitations": {}
+      },
+      "invited": {}
+    }
+  ]
+}
