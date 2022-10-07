@@ -20,6 +20,20 @@
       "password": "thao",
       "events": {},
       "invitations": {}
+    },
+    {
+      "id": "394ea744-97cc-40b7-ae1c-efdfd27902c9",
+      "username": "new",
+      "password": "guy",
+      "event": [],
+      "invitations": []
+    },
+    {
+      "id": "31733a0e-72a3-43c0-af50-b14f19a6578b",
+      "username": "1",
+      "password": "1",
+      "event": [],
+      "invitations": []
     }
   ],
   "events": [

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {DataService} from "./data.service";
+import {Subscription} from "rxjs";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'event-tracker';
+
+  private isLoggedIn: boolean = false;
+  sub: Subscription;
+
+  constructor(private data: DataService) {
+    this.sub = this.data.$isLoggedIn.subscribe((status) => {
+      this.isLoggedIn = status;
+      console.log(this.isLoggedIn);
+    });
+  }
+
+  getLoginStatus(){
+    return this.isLoggedIn;
+  }
 }
