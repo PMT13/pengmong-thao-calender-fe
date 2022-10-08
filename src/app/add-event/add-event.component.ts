@@ -23,7 +23,7 @@ export class AddEventComponent implements OnInit {
     this.sub = this.data.$user.subscribe((user) => {
       this.creator = user.id;
     });
-
+    this.creator = this.data.getUser().id; 
     this.id = uuidv4();
   }
 
@@ -47,7 +47,6 @@ export class AddEventComponent implements OnInit {
     const userCopy = this.data.getUser();
     userCopy.events.push(newEvent);
     this.data.updateUser(userCopy);
-    this.data.setUser(userCopy);
     this.modalService.dismissAll();
   }
 

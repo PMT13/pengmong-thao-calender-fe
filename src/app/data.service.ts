@@ -42,7 +42,7 @@ export class DataService {
     return this.user;
   }
 
-  // Set the current user when someone logs in or when it needs to be updated
+  // Set the current user when someone logs in
   setUser(account:IAccount){
     this.user = account;
     this.$user.next(this.user);
@@ -55,7 +55,8 @@ export class DataService {
       this.accountList[accountIndex] = account;
       this.$accountList.next(this.accountList);
       this.httpService.updateAccount(account.id,account).pipe(first()).subscribe({
-        next: () => {
+        next: (data) => {
+          console.log(this.accountList);
         },
         error: (err) => {
           console.error(err);

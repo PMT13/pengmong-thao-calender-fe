@@ -2,7 +2,9 @@
   <div class="container text-center">
     <div><strong>{{event.name}}</strong></div>
     <div>({{event.date}})</div>
-    <div>{{event.id}}</div>
+    <div>{{creator}}</div>
+    <button class="btn btn-danger" (click)="delete()" *ngIf="isEventList === true">Delete</button>
+    <button class="btn btn-primary" (click)="open(content)" *ngIf="isEventList === true">Edit</button>
   </div>
   <div class="container text-center d-flex align-items-center justify-content-center">
     <p><strong>Description:</strong> {{event.description}}</p>
@@ -11,3 +13,31 @@
     <app-invite-users [event]="event" *ngIf="isEventList === true"></app-invite-users>
   </div>
 </div>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Add Event: </h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click');resetInput()"></button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="mb-3">
+        <label for="name">Event Name:</label>
+        <div class="input-group">
+          <input id="name" class="form-control" type="text" name="name" [(ngModel)]="name">
+        </div>
+        <label for="date">Date of Event:</label>
+        <div class="input-group">
+          <input id="date" name="date" class="form-control" type="date" [(ngModel)]="date">
+        </div>
+        <label for="description">Description:</label>
+        <div class="input-group">
+          <textarea id="description" name="description" class="form-control" rows="5" [(ngModel)]="description"></textarea>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="save()">Save</button>
+  </div>
+</ng-template>

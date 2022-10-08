@@ -6,26 +6,27 @@
       "password": "thao",
       "events": [
         {
-          "id": "2",
-          "creator": "12b3a3e8-27a6-476e-8c69-33bbd6045c93",
-          "name": "ITS A ME, PENG!",
-          "date": "10/7/2022",
-          "description": "RANDOM WORD JAJAJAJAJAWWWWWWWWW"
-        },
-        {
           "id": "4da38069-5cd7-44a3-a61f-0a8df01d4e57",
           "name": "Youtube",
           "date": "2001-10-07",
-          "description": "regsgsrdgsgnerao;gnaeilrgnkejngake.gn"
+          "description": "Watch Hololive!",
+          "creator": "12b3a3e8-27a6-476e-8c69-33bbd6045c93"
+        },
+        {
+          "id": "62dabea4-6126-4ca2-994c-f9b3f2a2f160",
+          "name": "Birthday",
+          "date": "2001-01-21",
+          "description": "Celebrate my birth.",
+          "creator": "12b3a3e8-27a6-476e-8c69-33bbd6045c93"
         }
       ],
       "invitations": [
         {
-          "id": "0",
-          "creator": "31733a0e-72a3-43c0-af50-b14f19a6578b",
-          "name": "ONE ONE WORK",
-          "date": "10/7/2022",
-          "description": "RANDOM WORD JAJAJAJAJAWWWWWWWWW"
+          "id": "1",
+          "name": "IM JUST A NEW GUY",
+          "date": "2022-10-07",
+          "description": "Badum badum ba badum",
+          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
         }
       ]
     },
@@ -36,21 +37,20 @@
       "events": [
         {
           "id": "1",
-          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9",
           "name": "IM JUST A NEW GUY",
-          "date": "10/7/2022",
-          "description": "RANDOM WORD JAJAJAJAJAWWWWWWWWW"
+          "date": "2022-10-07",
+          "description": "Badum badum ba badum",
+          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
+        },
+        {
+          "id": "4229b5ad-a9ee-46db-bba1-ac9d509fc809",
+          "name": "New Event",
+          "date": "1111-11-11",
+          "description": "11111111111111111\n\n2",
+          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
         }
       ],
-      "invitations": [
-        {
-          "id": "0",
-          "creator": "31733a0e-72a3-43c0-af50-b14f19a6578b",
-          "name": "ONE ONE WORK",
-          "date": "10/7/2022",
-          "description": "RANDOM WORD JAJAJAJAJAWWWWWWWWW"
-        }
-      ]
+      "invitations": []
     },
     {
       "id": "31733a0e-72a3-43c0-af50-b14f19a6578b",
@@ -58,25 +58,14 @@
       "password": "1",
       "events": [
         {
-          "id": "0",
-          "creator": "31733a0e-72a3-43c0-af50-b14f19a6578b",
-          "name": "ONE ONE WORK",
-          "date": "10/7/2022",
-          "description": "RANDOM WORD JAJAJAJAJAWWWWWWWWW"
-        },
-        {
-          "id": "c7fb1436-5529-43dc-be47-e37515ba0fec"
+          "id": "b95afc18-5bd0-4519-be5d-a2450e701bfd",
+          "name": "Birthday",
+          "date": "2001-01-21",
+          "description": "Celebrate my birthday wow!",
+          "creator": "31733a0e-72a3-43c0-af50-b14f19a6578b"
         }
       ],
-      "invitations": [
-        {
-          "id": "2",
-          "creator": "12b3a3e8-27a6-476e-8c69-33bbd6045c93",
-          "name": "ITS A ME, PENG!",
-          "date": "10/7/2022",
-          "description": "RANDOM WORD JAJAJAJAJAWWWWWWWWW"
-        }
-      ]
+      "invitations": []
     }
   ]
 }
