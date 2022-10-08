@@ -18,18 +18,22 @@ export class InviteUsersComponent implements OnInit {
   constructor(private data: DataService) {
     this.sub = this.data.$accountList.subscribe((accounts) => {
       this.accountList = accounts;
+      const thisUser = this.data.getUser().id;
+      this.accountList = this.accountList.filter(account => account.id !== thisUser);
     });
   }
   ngOnInit(): void {
     this.accountList = this.data.getAccountList();
+    const thisUser = this.data.getUser().id;
+    this.accountList = this.accountList.filter(account => account.id !== thisUser);
   }
 
   // When a checkbox is checked, add the event to the corresponding (with the checkbox) account
   invite(account: IAccount){
     // have to check to see if it's checked or not (if event is already in invitations array)
-    const accountCopy = account;
-    accountCopy.invitations.push(this.event);
-    this.data.updateUser(accountCopy);
-    console.log(account);
+    // const accountCopy = account;
+    // accountCopy.invitations.push(this.event);
+    // this.data.updateUser(accountCopy);
+    // event.target.checked =
   }
 }

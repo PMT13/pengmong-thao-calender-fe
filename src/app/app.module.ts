@@ -10,6 +10,7 @@ import { EventListComponent } from './event-list/event-list.component';
 import { EventComponent } from './event/event.component';
 import { AddEventComponent } from './add-event/add-event.component';
 import { InviteUsersComponent } from './invite-users/invite-users.component';
+import { UsersComponent } from './users/users.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { InviteUsersComponent } from './invite-users/invite-users.component';
     EventListComponent,
     EventComponent,
     AddEventComponent,
-    InviteUsersComponent
+    InviteUsersComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,

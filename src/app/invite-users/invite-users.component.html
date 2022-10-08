@@ -7,7 +7,9 @@
   </thead>
   <tbody>
   <tr *ngFor="let account of accountList">
-    <th scope="row"><input type="checkbox" (click)="invite(account)"></th>
+    <th scope="row">
+     <app-users [event]="event" [account]="account"></app-users>
+    </th>
     <td>{{account.username}}</td>
   </tr>
   </tbody>
