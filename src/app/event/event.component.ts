@@ -74,8 +74,8 @@ export class EventComponent implements OnInit {
   }
 
   resetInput(){
-    this.name = "";
-    this.date = "";
-    this.description = "";
+    this.name = this.event.name;
+    this.date = this.event.date;
+    this.description = this.event.description;
   }
 }

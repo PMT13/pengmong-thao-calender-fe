@@ -27,6 +27,13 @@
           "date": "2022-10-07",
           "description": "Badum badum ba badum",
           "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
+        },
+        {
+          "id": "b95afc18-5bd0-4519-be5d-a2450e701bfd",
+          "name": "Birthday",
+          "date": "2001-01-21",
+          "description": "Celebrate my birthday with me!",
+          "creator": "31733a0e-72a3-43c0-af50-b14f19a6578b"
         }
       ]
     },
@@ -61,7 +68,7 @@
           "id": "b95afc18-5bd0-4519-be5d-a2450e701bfd",
           "name": "Birthday",
           "date": "2001-01-21",
-          "description": "Celebrate my birthday wow!",
+          "description": "Celebrate my birthday with me!",
           "creator": "31733a0e-72a3-43c0-af50-b14f19a6578b"
         }
       ],
