@@ -11,9 +11,23 @@
           "name": "ITS A ME, PENG!",
           "date": "10/7/2022",
           "description": "RANDOM WORD JAJAJAJAJAWWWWWWWWW"
+        },
+        {
+          "id": "4da38069-5cd7-44a3-a61f-0a8df01d4e57",
+          "name": "Youtube",
+          "date": "2001-10-07",
+          "description": "regsgsrdgsgnerao;gnaeilrgnkejngake.gn"
         }
       ],
-      "invitations": []
+      "invitations": [
+        {
+          "id": "0",
+          "creator": "31733a0e-72a3-43c0-af50-b14f19a6578b",
+          "name": "ONE ONE WORK",
+          "date": "10/7/2022",
+          "description": "RANDOM WORD JAJAJAJAJAWWWWWWWWW"
+        }
+      ]
     },
     {
       "id": "394ea744-97cc-40b7-ae1c-efdfd27902c9",
@@ -49,6 +63,9 @@
           "name": "ONE ONE WORK",
           "date": "10/7/2022",
           "description": "RANDOM WORD JAJAJAJAJAWWWWWWWWW"
+        },
+        {
+          "id": "c7fb1436-5529-43dc-be47-e37515ba0fec"
         }
       ],
       "invitations": [

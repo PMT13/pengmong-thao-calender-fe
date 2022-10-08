@@ -34,6 +34,10 @@ export class DataService {
     })
   }
 
+  getAccountList(){
+    return this.accountList;
+  }
+
   getUser(){
     return this.user;
   }
@@ -42,6 +46,19 @@ export class DataService {
   setUser(account:IAccount){
     this.user = account;
     this.$user.next(this.user);
+  }
+
+  updateUser(account:IAccount){
+    this.accountList = this.accountList.filter(accountTwo => accountTwo.id !== account.id);
+    this.accountList.push(account);
+    this.$accountList.next(this.accountList);
+    this.httpService.updateAccount(account.id,account).pipe(first()).subscribe({
+      next: () => {
+      },
+      error: (err) => {
+        console.error(err);
+      }
+    })
   }
 
   // Set a new user when someone creates an account and add it to the accounts list

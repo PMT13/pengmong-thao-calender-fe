@@ -1,0 +1,14 @@
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+  <div class="container text-center">
+    <div><strong>{{event.name}}</strong></div>
+    <div>({{event.date}})</div>
+    <div>{{event.id}}</div>
+  </div>
+  <div class="container text-center d-flex align-items-center justify-content-center">
+    <p><strong>Description:</strong> {{event.description}}</p>
+  </div>
+  <div class="container text-center d-flex align-items-center justify-content-center">
+    <app-invite-users [event]="event"></app-invite-users>
+  </div>
+</div>
+

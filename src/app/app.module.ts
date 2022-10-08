@@ -8,13 +8,17 @@ import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import { EventListComponent } from './event-list/event-list.component';
 import { EventComponent } from './event/event.component';
+import { AddEventComponent } from './add-event/add-event.component';
+import { InviteUsersComponent } from './invite-users/invite-users.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     EventListComponent,
-    EventComponent
+    EventComponent,
+    AddEventComponent,
+    InviteUsersComponent
   ],
   imports: [
     BrowserModule,

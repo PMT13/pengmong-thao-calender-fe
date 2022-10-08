@@ -1,0 +1,14 @@
+<table class="table table-bordered">
+  <thead>
+  <tr>
+    <th scope="col">Invite</th>
+    <th scope="col">User</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let account of accountList">
+    <th scope="row"><input type="checkbox" (click)="invite(account)"></th>
+    <td>{{account.username}}</td>
+  </tr>
+  </tbody>
+</table>

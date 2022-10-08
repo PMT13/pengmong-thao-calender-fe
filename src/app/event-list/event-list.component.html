@@ -3,16 +3,21 @@
     <input type="checkbox" id="tabSlider" (change)="isEventList = !isEventList">
     <span class="slider round"></span>
   </label>
-  <h1 *ngIf="isEventList === true">My Events</h1>
   <div *ngIf="isEventList === true">
-    <app-event *ngFor="let event of this.getUser().events"
-                       [event]="event">
-    </app-event>
+    <div><h1>My Events</h1></div>
+    <div>
+      <app-event *ngFor="let event of this.getUser().events"
+                 [event]="event">
+      </app-event>
+    </div>
+    <app-add-event></app-add-event>
   </div>
-  <h1 *ngIf="isEventList === false">My Invitations</h1>
   <div *ngIf="isEventList === false">
-    <app-event *ngFor="let event of this.getUser().invitations"
-                       [event]="event">
-    </app-event>
+    <div><h1>My Invitations</h1></div>
+    <div>
+      <app-event *ngFor="let event of this.getUser().invitations"
+                 [event]="event">
+      </app-event>
+    </div>
   </div>
 </div>
