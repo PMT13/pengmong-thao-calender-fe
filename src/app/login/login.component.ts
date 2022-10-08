@@ -31,6 +31,7 @@ export class LoginComponent implements OnInit,OnDestroy {
     this.sub.unsubscribe();
   }
 
+  //Checks to see if account is in master account list and acts accordingly
   login(){
     const foundAccount = this.accountList.find((account) => {
       return account.username === this.username &&
@@ -44,6 +45,9 @@ export class LoginComponent implements OnInit,OnDestroy {
       this.data.setLoginStatus(true);
     }
   }
+
+  // Checks if account exists, makes sure input fields aren't empty/are valid, creates a
+  // new user and sends post request to http service
   register(){
     const accountExist = this.accountList.find((account) => {return account.username === this.username});
     if( accountExist !== undefined){
@@ -69,7 +73,7 @@ export class LoginComponent implements OnInit,OnDestroy {
     this.httpService.addAccount(newUser).pipe(first()).subscribe({
       next: () => {
         this.data.setLoginStatus(true);
-        this.data.setNewUser(newUser);
+        this.data.registerUser(newUser);
       },
       error: (err) => {
         alert(err);

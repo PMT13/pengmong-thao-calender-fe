@@ -21,7 +21,7 @@ export class DataService {
     this.isLoggedIn = false;
   }
 
-  // Retrieve all the accounts from the db.json file
+  // Retrieve all the accounts from the db.json file and then set accountList to that data and notify subscribers
   getAccounts(){
     this.httpService.getAccounts().pipe(first()).subscribe({
       next: data => {
@@ -42,27 +42,30 @@ export class DataService {
     return this.user;
   }
 
-  // Set a new user when someone logs in
+  // Set the current user when someone logs in or when it needs to be updated
   setUser(account:IAccount){
     this.user = account;
     this.$user.next(this.user);
   }
 
+  // Updates the database account list by removing the old account and replacing it with the updated account
   updateUser(account:IAccount){
-    this.accountList = this.accountList.filter(accountTwo => accountTwo.id !== account.id);
-    this.accountList.push(account);
-    this.$accountList.next(this.accountList);
-    this.httpService.updateAccount(account.id,account).pipe(first()).subscribe({
-      next: () => {
-      },
-      error: (err) => {
-        console.error(err);
-      }
-    })
+    const accountIndex = this.accountList.findIndex(account_ => account_.id === account.id);
+    if (accountIndex > -1) {
+      this.accountList[accountIndex] = account;
+      this.$accountList.next(this.accountList);
+      this.httpService.updateAccount(account.id,account).pipe(first()).subscribe({
+        next: () => {
+        },
+        error: (err) => {
+          console.error(err);
+        }
+      });
+    }
   }
 
   // Set a new user when someone creates an account and add it to the accounts list
-  setNewUser(account:IAccount){
+  registerUser(account:IAccount){
     this.user = account;
     this.accountList.push(this.user);
     this.$user.next(this.user);

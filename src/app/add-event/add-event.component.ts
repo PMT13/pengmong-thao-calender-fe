@@ -33,6 +33,8 @@ export class AddEventComponent implements OnInit {
     this.modalService.open(content);
   }
 
+  // Creates a new IEvent object, pushes that object into the logged-in user's
+  // "events" array, and updates information in the data service
   addToList(){
     const newEvent =
       {
@@ -49,6 +51,7 @@ export class AddEventComponent implements OnInit {
     this.modalService.dismissAll();
   }
 
+  // Reset the input fields if the user cancels adding an event
   resetInput(){
     this.name = "";
     this.date = "";
