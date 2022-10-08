@@ -26,9 +26,6 @@
           "name": "ONE ONE WORK",
           "date": "10/7/2022",
           "description": "RANDOM WORD JAJAJAJAJAWWWWWWWWW"
-        },
-        {
-          "id": "c7fb1436-5529-43dc-be47-e37515ba0fec"
         }
       ]
     },
@@ -47,9 +44,9 @@
       ],
       "invitations": [
         {
-          "id": "2",
-          "creator": "12b3a3e8-27a6-476e-8c69-33bbd6045c93",
-          "name": "ITS A ME, PENG!",
+          "id": "0",
+          "creator": "31733a0e-72a3-43c0-af50-b14f19a6578b",
+          "name": "ONE ONE WORK",
           "date": "10/7/2022",
           "description": "RANDOM WORD JAJAJAJAJAWWWWWWWWW"
         }
@@ -76,13 +73,6 @@
           "id": "2",
           "creator": "12b3a3e8-27a6-476e-8c69-33bbd6045c93",
           "name": "ITS A ME, PENG!",
-          "date": "10/7/2022",
-          "description": "RANDOM WORD JAJAJAJAJAWWWWWWWWW"
-        },
-        {
-          "id": "1",
-          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9",
-          "name": "IM JUST A NEW GUY",
           "date": "10/7/2022",
           "description": "RANDOM WORD JAJAJAJAJAWWWWWWWWW"
         }

@@ -8,7 +8,7 @@
   <tbody>
   <tr *ngFor="let account of accountList">
     <th scope="row">
-     <app-users [event]="event" [account]="account"></app-users>
+     <app-checkbox [event]="event" [account]="account"></app-checkbox>
     </th>
     <td>{{account.username}}</td>
   </tr>

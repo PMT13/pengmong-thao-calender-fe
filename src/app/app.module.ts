@@ -10,7 +10,7 @@ import { EventListComponent } from './event-list/event-list.component';
 import { EventComponent } from './event/event.component';
 import { AddEventComponent } from './add-event/add-event.component';
 import { InviteUsersComponent } from './invite-users/invite-users.component';
-import { UsersComponent } from './users/users.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import { UsersComponent } from './users/users.component';
     EventComponent,
     AddEventComponent,
     InviteUsersComponent,
-    UsersComponent
+    CheckboxComponent
   ],
   imports: [
     BrowserModule,

@@ -9,9 +9,11 @@ import {IEvent} from "../interfaces/IEvent";
 export class EventComponent implements OnInit {
 
   @Input() event!: IEvent;
-  constructor() { }
-
-  ngOnInit(): void {
+  @Input() isEventList!: boolean;
+  
+  constructor() {
   }
+
+  ngOnInit(): void {}
 
 }

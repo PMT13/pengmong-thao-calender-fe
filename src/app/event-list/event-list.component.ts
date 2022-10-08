@@ -16,7 +16,6 @@ export class EventListComponent implements OnInit {
   sub: Subscription;
 
   constructor(private data: DataService) {
-    this.isEventList = true;
     this.user = this.data.getUser()
     this.sub = this.data.$user.subscribe((user) => {
       this.user = user;

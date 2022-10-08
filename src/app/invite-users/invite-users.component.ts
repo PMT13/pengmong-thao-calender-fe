@@ -27,13 +27,4 @@ export class InviteUsersComponent implements OnInit {
     const thisUser = this.data.getUser().id;
     this.accountList = this.accountList.filter(account => account.id !== thisUser);
   }
-
-  // When a checkbox is checked, add the event to the corresponding (with the checkbox) account
-  invite(account: IAccount){
-    // have to check to see if it's checked or not (if event is already in invitations array)
-    // const accountCopy = account;
-    // accountCopy.invitations.push(this.event);
-    // this.data.updateUser(accountCopy);
-    // event.target.checked =
-  }
 }

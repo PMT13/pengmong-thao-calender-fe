@@ -8,7 +8,6 @@
     <p><strong>Description:</strong> {{event.description}}</p>
   </div>
   <div class="container text-center d-flex align-items-center justify-content-center">
-    <app-invite-users [event]="event"></app-invite-users>
+    <app-invite-users [event]="event" *ngIf="isEventList === true"></app-invite-users>
   </div>
 </div>
-
