@@ -56,7 +56,6 @@ export class DataService {
       this.$accountList.next(this.accountList);
       this.httpService.updateAccount(account.id,account).pipe(first()).subscribe({
         next: (data) => {
-          console.log(this.accountList);
         },
         error: (err) => {
           console.error(err);

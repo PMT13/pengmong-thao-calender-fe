@@ -42,6 +42,7 @@ export class EventComponent implements OnInit {
     const userCopy = this.data.getUser();
     userCopy.events = userCopy.events.filter(event => event.id !== this.event.id);
     this.data.updateUser(userCopy);
+    this.data.setUser(userCopy);
     for(let i = 0; i < this.data.getAccountList().length; i++){
       this.data.getAccountList()[i].invitations = this.data.getAccountList()[i].invitations.filter(event => event.id !== this.event.id);
       this.data.updateUser(this.data.getAccountList()[i]);

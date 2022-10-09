@@ -11,7 +11,6 @@ import {v4 as uuidv4} from "uuid";
 })
 export class AddEventComponent implements OnInit {
 
-  id!: string;
   creator!: string;
   name!: string;
   date!: string;
@@ -23,8 +22,7 @@ export class AddEventComponent implements OnInit {
     this.sub = this.data.$user.subscribe((user) => {
       this.creator = user.id;
     });
-    this.creator = this.data.getUser().id; 
-    this.id = uuidv4();
+    this.creator = this.data.getUser().id;
   }
 
   ngOnInit(): void {}
@@ -38,7 +36,7 @@ export class AddEventComponent implements OnInit {
   addToList(){
     const newEvent =
       {
-        id: this.id,
+        id: uuidv4(),
         name: this.name,
         date: this.date,
         description: this.description,
@@ -47,7 +45,9 @@ export class AddEventComponent implements OnInit {
     const userCopy = this.data.getUser();
     userCopy.events.push(newEvent);
     this.data.updateUser(userCopy);
+    this.data.setUser(userCopy);
     this.modalService.dismissAll();
+    this.resetInput();
   }
 
   // Reset the input fields if the user cancels adding an event

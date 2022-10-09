@@ -6,7 +6,7 @@
   <div *ngIf="isEventList === true">
     <div><h1>My Events</h1></div>
     <div>
-      <app-event *ngFor="let event of this.getUser().events"
+      <app-event *ngFor="let event of this.getEventList()"
                  [event]="event" [isEventList]="this.isEventList">
       </app-event>
     </div>
@@ -15,7 +15,7 @@
   <div *ngIf="isEventList === false">
     <div><h1>My Invitations</h1></div>
     <div>
-      <app-event *ngFor="let event of this.getUser().invitations"
+      <app-event *ngFor="let event of this.getInvitationsList()"
                  [event]="event" [isEventList]="this.isEventList">
       </app-event>
     </div>

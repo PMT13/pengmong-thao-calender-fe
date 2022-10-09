@@ -6,71 +6,33 @@
       "password": "thao",
       "events": [
         {
-          "id": "4da38069-5cd7-44a3-a61f-0a8df01d4e57",
-          "name": "Youtube",
-          "date": "2001-10-07",
-          "description": "Watch Hololive!",
+          "id": "7b453f9d-29ad-4438-9acf-e7b4ad63c3dd",
+          "name": "1",
+          "date": "1111-11-11",
           "creator": "12b3a3e8-27a6-476e-8c69-33bbd6045c93"
         },
         {
-          "id": "62dabea4-6126-4ca2-994c-f9b3f2a2f160",
-          "name": "Birthday",
-          "date": "2001-01-21",
-          "description": "Celebrate my birth.",
+          "id": "bf12cb2e-bd69-4c15-a03a-29d36ad4c6c6",
+          "name": "3",
+          "date": "3333-03-31",
+          "description": "",
           "creator": "12b3a3e8-27a6-476e-8c69-33bbd6045c93"
         }
       ],
-      "invitations": [
-        {
-          "id": "1",
-          "name": "IM JUST A NEW GUY",
-          "date": "2022-10-07",
-          "description": "Millie Parfait",
-          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
-        },
-        {
-          "id": "b95afc18-5bd0-4519-be5d-a2450e701bfd",
-          "name": "Birthday",
-          "date": "2001-01-21",
-          "description": "Celebrate my birthday with me!",
-          "creator": "31733a0e-72a3-43c0-af50-b14f19a6578b"
-        },
-        {
-          "id": "baa1bc26-3ca7-492f-9887-886df9fcbb14",
-          "name": "My first event",
-          "date": "2022-10-09",
-          "description": "Listening to music on you tube while making this event! :D",
-          "creator": "aee2b475-e361-48b8-b1ba-4bea70e34f69"
-        }
-      ]
+      "invitations": []
     },
     {
       "id": "394ea744-97cc-40b7-ae1c-efdfd27902c9",
       "username": "new",
       "password": "guy",
-      "events": [
-        {
-          "id": "1",
-          "name": "IM JUST A NEW GUY",
-          "date": "2022-10-07",
-          "description": "Millie Parfait",
-          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
-        },
-        {
-          "id": "4229b5ad-a9ee-46db-bba1-ac9d509fc809",
-          "name": "New Event",
-          "date": "1111-11-11",
-          "description": "11111111111111111\n\n2",
-          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
-        }
-      ],
+      "events": [],
       "invitations": [
         {
-          "id": "baa1bc26-3ca7-492f-9887-886df9fcbb14",
-          "name": "My first event",
-          "date": "2022-10-09",
-          "description": "Listening to music on you tube while making this event! :D",
-          "creator": "aee2b475-e361-48b8-b1ba-4bea70e34f69"
+          "id": "6c67e343-20f3-4448-9b08-5583cddce6f6",
+          "name": "1's event",
+          "date": "2022-11-01",
+          "description": "!'s fun event",
+          "creator": "31733a0e-72a3-43c0-af50-b14f19a6578b"
         }
       ]
     },
@@ -80,37 +42,29 @@
       "password": "1",
       "events": [
         {
-          "id": "b95afc18-5bd0-4519-be5d-a2450e701bfd",
-          "name": "Birthday",
-          "date": "2001-01-21",
-          "description": "Celebrate my birthday with me!",
+          "id": "6c67e343-20f3-4448-9b08-5583cddce6f6",
+          "name": "1's event",
+          "date": "2022-11-01",
+          "description": "!'s fun event",
           "creator": "31733a0e-72a3-43c0-af50-b14f19a6578b"
         }
       ],
-      "invitations": [
-        {
-          "id": "baa1bc26-3ca7-492f-9887-886df9fcbb14",
-          "name": "My first event",
-          "date": "2022-10-09",
-          "description": "Listening to music on you tube while making this event! :D",
-          "creator": "aee2b475-e361-48b8-b1ba-4bea70e34f69"
-        }
-      ]
+      "invitations": []
     },
     {
       "id": "aee2b475-e361-48b8-b1ba-4bea70e34f69",
       "username": "Timmy",
       "password": "123",
-      "events": [
+      "events": [],
+      "invitations": [
         {
-          "id": "baa1bc26-3ca7-492f-9887-886df9fcbb14",
-          "name": "My first event",
-          "date": "2022-10-09",
-          "description": "Listening to music on you tube while making this event! :D",
-          "creator": "aee2b475-e361-48b8-b1ba-4bea70e34f69"
+          "id": "6c67e343-20f3-4448-9b08-5583cddce6f6",
+          "name": "1's event",
+          "date": "2022-11-01",
+          "description": "!'s fun event",
+          "creator": "31733a0e-72a3-43c0-af50-b14f19a6578b"
         }
-      ],
-      "invitations": []
+      ]
     }
   ]
 }
