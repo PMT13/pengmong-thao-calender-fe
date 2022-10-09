@@ -19,6 +19,7 @@ export class LoginComponent implements OnInit,OnDestroy {
   sub: Subscription;
 
   constructor(private data: DataService, private httpService: HttpService ) {
+    this.accountList = this.data.getAccountList();
     this.sub = this.data.$accountList.subscribe((accounts) => {
       this.accountList = accounts;
     });

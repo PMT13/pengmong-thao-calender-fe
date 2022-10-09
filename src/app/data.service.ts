@@ -78,4 +78,8 @@ export class DataService {
     this.isLoggedIn = bool;
     this.$isLoggedIn.next(this.isLoggedIn);
   }
+
+  getLoginStatus(){
+    return this.isLoggedIn;
+  }
 }

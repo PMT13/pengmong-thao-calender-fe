@@ -11,6 +11,7 @@ import { EventComponent } from './event/event.component';
 import { AddEventComponent } from './add-event/add-event.component';
 import { InviteUsersComponent } from './invite-users/invite-users.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
     EventComponent,
     AddEventComponent,
     InviteUsersComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,

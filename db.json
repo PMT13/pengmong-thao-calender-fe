@@ -25,7 +25,7 @@
           "id": "1",
           "name": "IM JUST A NEW GUY",
           "date": "2022-10-07",
-          "description": "Badum badum ba badum",
+          "description": "Millie Parfait",
           "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
         },
         {
@@ -34,6 +34,13 @@
           "date": "2001-01-21",
           "description": "Celebrate my birthday with me!",
           "creator": "31733a0e-72a3-43c0-af50-b14f19a6578b"
+        },
+        {
+          "id": "baa1bc26-3ca7-492f-9887-886df9fcbb14",
+          "name": "My first event",
+          "date": "2022-10-09",
+          "description": "Listening to music on you tube while making this event! :D",
+          "creator": "aee2b475-e361-48b8-b1ba-4bea70e34f69"
         }
       ]
     },
@@ -46,7 +53,7 @@
           "id": "1",
           "name": "IM JUST A NEW GUY",
           "date": "2022-10-07",
-          "description": "Badum badum ba badum",
+          "description": "Millie Parfait",
           "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
         },
         {
@@ -57,7 +64,15 @@
           "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
         }
       ],
-      "invitations": []
+      "invitations": [
+        {
+          "id": "baa1bc26-3ca7-492f-9887-886df9fcbb14",
+          "name": "My first event",
+          "date": "2022-10-09",
+          "description": "Listening to music on you tube while making this event! :D",
+          "creator": "aee2b475-e361-48b8-b1ba-4bea70e34f69"
+        }
+      ]
     },
     {
       "id": "31733a0e-72a3-43c0-af50-b14f19a6578b",
@@ -70,6 +85,29 @@
           "date": "2001-01-21",
           "description": "Celebrate my birthday with me!",
           "creator": "31733a0e-72a3-43c0-af50-b14f19a6578b"
+        }
+      ],
+      "invitations": [
+        {
+          "id": "baa1bc26-3ca7-492f-9887-886df9fcbb14",
+          "name": "My first event",
+          "date": "2022-10-09",
+          "description": "Listening to music on you tube while making this event! :D",
+          "creator": "aee2b475-e361-48b8-b1ba-4bea70e34f69"
+        }
+      ]
+    },
+    {
+      "id": "aee2b475-e361-48b8-b1ba-4bea70e34f69",
+      "username": "Timmy",
+      "password": "123",
+      "events": [
+        {
+          "id": "baa1bc26-3ca7-492f-9887-886df9fcbb14",
+          "name": "My first event",
+          "date": "2022-10-09",
+          "description": "Listening to music on you tube while making this event! :D",
+          "creator": "aee2b475-e361-48b8-b1ba-4bea70e34f69"
         }
       ],
       "invitations": []
