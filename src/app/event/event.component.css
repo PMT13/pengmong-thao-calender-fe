@@ -4,3 +4,8 @@
   border: 1px solid black;
   padding: 2%;
 }
+
+.text-center{
+  margin-top: calc(var(--bs-gutter-x) * .5);
+  margin-bottom: calc(var(--bs-gutter-x) * .5);
+}

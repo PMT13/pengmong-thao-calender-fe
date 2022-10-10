@@ -5,13 +5,21 @@
   </label>
   <div *ngIf="isEventList === true">
     <div><h1>My Events</h1></div>
-    <div class="sort">
-      <span>From: <input type="date" [(ngModel)]="from"></span>
-      <span>To: <input type="date" [(ngModel)]="to"></span>
-      <button (click)="filter()">Filter</button><br>
-      <button (click)="showAll()">Show All</button>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">From</span>
+      </div>
+      <input type="date" [(ngModel)]="from" class="form-control">
+      <div class="input-group-prepend">
+        <span class="input-group-text">To</span>
+      </div>
+      <input type="date" [(ngModel)]="to" class="form-control">
+      <button class="btn btn-primary" (click)="filter()">Filter</button><br>
     </div>
-    <div>
+    <div class="show">
+      <button class="btn btn-primary"(click)="showAll()">Show All</button>
+    </div>
+    <div class="row row-cols-3">
       <app-event *ngFor="let event of this.getEventList()"
                  [event]="event" [isEventList]="this.isEventList">
       </app-event>
@@ -20,13 +28,21 @@
   </div>
   <div *ngIf="isEventList === false">
     <div><h1>My Invitations</h1></div>
-    <div class="sort">
-      <span>From: <input type="date" [(ngModel)]="from"></span>
-      <span>To: <input type="date" [(ngModel)]="to"></span>
-      <button (click)="filter()">Filter</button><br>
-      <button (click)="showAll()">Show All</button>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">From</span>
+      </div>
+      <input type="date" [(ngModel)]="from" class="form-control">
+      <div class="input-group-prepend">
+        <span class="input-group-text">To</span>
+      </div>
+      <input type="date" [(ngModel)]="to" class="form-control">
+      <button class="btn btn-primary" (click)="filter()">Filter</button><br>
     </div>
-    <div>
+    <div class="show">
+      <button class="btn btn-primary" (click)="showAll()">Show All</button>
+    </div>
+    <div class="row row-cols-3">
       <app-event *ngFor="let event of this.getInvitationsList()"
                  [event]="event" [isEventList]="this.isEventList">
       </app-event>

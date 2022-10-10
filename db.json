@@ -28,13 +28,6 @@
           "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
         },
         {
-          "id": "5bfabf98-8085-4152-ae5c-2b165ca11097",
-          "name": "Timberwolves Game",
-          "date": "2022-10-09",
-          "description": "Bally sports North",
-          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
-        },
-        {
           "id": "6c67e343-20f3-4448-9b08-5583cddce6f6",
           "name": "1's event",
           "date": "2022-11-01",
@@ -66,7 +59,7 @@
           "id": "5bfabf98-8085-4152-ae5c-2b165ca11097",
           "name": "Timberwolves Game",
           "date": "2022-10-09",
-          "description": "Bally sports North",
+          "description": "Bally Sports North",
           "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
         },
         {
@@ -107,6 +100,13 @@
           "date": "2021-01-21",
           "description": "happy birthday",
           "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
+        },
+        {
+          "id": "5bfabf98-8085-4152-ae5c-2b165ca11097",
+          "name": "Timberwolves Game",
+          "date": "2022-10-09",
+          "description": "Bally Sports North",
+          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
         }
       ]
     },
@@ -129,6 +129,13 @@
           "date": "2022-11-01",
           "description": "!'s fun event",
           "creator": "31733a0e-72a3-43c0-af50-b14f19a6578b"
+        },
+        {
+          "id": "5bfabf98-8085-4152-ae5c-2b165ca11097",
+          "name": "Timberwolves Game",
+          "date": "2022-10-09",
+          "description": "Bally Sports North",
+          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
         }
       ]
     }

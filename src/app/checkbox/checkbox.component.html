@@ -1,3 +1,14 @@
-<input *ngIf="checked === true" type="checkbox" (click)="invite(account)" checked>
-<input *ngIf="checked === false" type="checkbox" (click)="invite(account)">
+<div *ngIf="checked === true">
+  <input class="form-check-input" type="checkbox" (click)="invite(account)" id="isChecked" checked>
+  <label class="form-check-label" for="isChecked">
+    {{account.username}}
+  </label>
+</div>
+
+<div *ngIf="checked === false">
+  <input class="form-check-input" type="checkbox" (click)="invite(account)" id="notChecked">
+  <label class="form-check-label" for="notChecked">
+    {{account.username}}
+  </label>
+</div>
 
