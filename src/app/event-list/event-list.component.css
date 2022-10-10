@@ -69,9 +69,17 @@ h1{
 .show{
   text-align: center;
   margin-top: 2%;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
 }
 
 .row{
   padding: 1%;
+}
+
+.alert{
+  margin-top: 1%;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }

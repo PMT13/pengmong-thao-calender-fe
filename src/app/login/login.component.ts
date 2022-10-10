@@ -15,6 +15,8 @@ export class LoginComponent implements OnInit,OnDestroy {
   username!: string;
   password!: string;
   accountList!: IAccount[];
+  errorMsg!: string;
+  error: boolean = false;
 
   sub: Subscription;
 
@@ -39,7 +41,8 @@ export class LoginComponent implements OnInit,OnDestroy {
         account.password === this.password
     });
     if( foundAccount === undefined){
-      alert("Invalid Login");
+      this.errorMsg = "Invalid Login";
+      this.error = true;
       return;
     }else{
       this.data.setUser(foundAccount);
@@ -52,15 +55,18 @@ export class LoginComponent implements OnInit,OnDestroy {
   register(){
     const accountExist = this.accountList.find((account) => {return account.username === this.username});
     if( accountExist !== undefined){
-      alert("Username already exists.");
+      this.errorMsg = "Username already exists.";
+      this.error = true;
       return;
     }
     if(this.username === undefined || this.password === undefined){
-      alert("Please fill in all input fields");
+      this.errorMsg = "Please fill in all input fields";
+      this.error = true;
       return;
     }
     if(this.username.replace(/\s/g, '') === "" || this.password.replace(/\s/g, '') === ""){
-      alert("Please fill in all input fields");
+      this.errorMsg = "Please fill in all input fields";
+      this.error = true;
       return;
     }
     const newUser =
@@ -77,7 +83,8 @@ export class LoginComponent implements OnInit,OnDestroy {
         this.data.registerUser(newUser);
       },
       error: (err) => {
-        alert(err);
+        this.errorMsg = err;
+        this.error = true;
       }
     });
   }

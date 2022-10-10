@@ -1,10 +1,11 @@
 <div id="eventList">
   <label class="switch">
-    <input type="checkbox" id="tabSlider" (change)="isEventList = !isEventList">
+    <input type="checkbox" id="tabSlider" (change)="switchLists()">
     <span class="slider round"></span>
   </label>
   <div *ngIf="isEventList === true">
     <div><h1>My Events</h1></div>
+    <div class="alert alert-danger" role="alert" *ngIf="error === true">{{errorMsg}}</div>
     <div class="input-group">
       <div class="input-group-prepend">
         <span class="input-group-text">From</span>
@@ -28,6 +29,7 @@
   </div>
   <div *ngIf="isEventList === false">
     <div><h1>My Invitations</h1></div>
+    <div class="alert alert-danger" role="alert" *ngIf="error === true">{{errorMsg}}</div>
     <div class="input-group">
       <div class="input-group-prepend">
         <span class="input-group-text">From</span>

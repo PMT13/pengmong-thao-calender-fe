@@ -29,7 +29,7 @@ export class DataService {
         this.$accountList.next(this.accountList);
       },
       error: (err) => {
-        console.error(err);
+        alert(err);
       }
     })
   }
@@ -57,7 +57,7 @@ export class DataService {
       this.httpService.updateAccount(account.id,account).pipe(first()).subscribe({
         next: (data) => {},
         error: (err) => {
-          console.error(err);
+          alert(err);
         }
       });
     }

@@ -14,6 +14,8 @@ export class EventListComponent implements OnInit {
   isEventList: boolean = true;
   from!: string;
   to!: string;
+  errorMsg!: string;
+  error: boolean = false;
   private user: IAccount;
   private eventList!: IEvent[];
   private inviteList!: IEvent[];
@@ -57,8 +59,10 @@ export class EventListComponent implements OnInit {
   }
 
   filter(){
+    this.error = false;
     if(this.from === "" || this.to === ""){
-      alert("Please fill in all date inputs!");
+      this.errorMsg = "Please fill in all date inputs!";
+      this.error = true;
       return;
     }
     if(this.isEventList === true){
@@ -79,9 +83,15 @@ export class EventListComponent implements OnInit {
   }
 
   showAll(){
+    this.error = false;
     this.eventList = this.eventListCopy;
     this.inviteList = this.inviteListCopy;
     this.from = "";
     this.to = "";
+  }
+
+  switchLists(){
+    this.isEventList = !this.isEventList;
+    this.error = false;
   }
 }

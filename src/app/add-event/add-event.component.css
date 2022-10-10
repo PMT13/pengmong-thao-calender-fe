@@ -1,12 +1,9 @@
-#addMedia{
-  width: 90px;
-  height: 90px;
-  border-radius: 45px;
-  font-size: 32px;
-  text-align: center;
+i{
+  font-size: 6em;
   cursor: pointer;
   position: fixed;
-  right:1.5%;
+  right:2%;
   top: 85%;
   z-index: 95;
+  color:#0d6efd;
 }
