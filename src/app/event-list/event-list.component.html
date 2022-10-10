@@ -5,6 +5,11 @@
   </label>
   <div *ngIf="isEventList === true">
     <div><h1>My Events</h1></div>
+    <div class="sort">
+      <span>From: <input type="date" [(ngModel)]="from"></span>
+      <span>To: <input type="date" [(ngModel)]="to"></span>
+      <button (click)="filter()">Filter</button>
+    </div>
     <div>
       <app-event *ngFor="let event of this.getEventList()"
                  [event]="event" [isEventList]="this.isEventList">
