@@ -1,16 +1,11 @@
-<table class="table table-bordered">
-  <thead>
-  <tr>
-    <th scope="col">Invite</th>
-    <th scope="col">User</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr *ngFor="let account of accountList">
-    <th scope="row">
-     <app-checkbox [event]="event" [account]="account"></app-checkbox>
-    </th>
-    <td>{{account.username}}</td>
-  </tr>
-  </tbody>
-</table>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
+    Invite
+  </button>
+  <div class="dropdown-menu" (click)="$event.stopPropagation()">
+    <button *ngFor="let account of accountList" class="dropdown-item" type="button">
+      <app-checkbox [event]="event" [account]="account"></app-checkbox>
+    </button>
+  </div>
+</div>
+

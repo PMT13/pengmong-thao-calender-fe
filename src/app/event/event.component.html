@@ -1,16 +1,18 @@
-<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-  <div class="container text-center">
-    <div><strong>{{event.name}}</strong></div>
-    <div>({{event.date}})</div>
-    <div>{{creator}}</div>
-    <button class="btn btn-danger" (click)="delete()" *ngIf="isEventList === true">Delete</button>
-    <button class="btn btn-primary" (click)="open(content)" *ngIf="isEventList === true">Edit</button>
-  </div>
-  <div class="container text-center d-flex align-items-center justify-content-center">
-    <p><strong>Description:</strong> {{event.description}}</p>
-  </div>
-  <div class="container text-center d-flex align-items-center justify-content-center">
-    <app-invite-users [event]="event" *ngIf="isEventList === true"></app-invite-users>
+<div class="card text-center">
+  <div class="card-header">{{event.date}}</div>
+  <div class="card-body">
+    <div class="card-title">
+      <strong>{{event.name}}</strong>
+      <div *ngIf="isEventList === false">Invited by: {{creator}}</div>
+    </div>
+    <p class="card-text">{{event.description}}</p>
+    <div class="btn-group" role="group">
+      <button class="btn btn-danger" (click)="delete()" *ngIf="isEventList === true">Delete</button>
+      <button class="btn btn-primary" (click)="open(content)" *ngIf="isEventList === true">Edit</button>
+      <div class="btn-group" role="group">
+        <app-invite-users [event]="event" *ngIf="isEventList === true"></app-invite-users>
+      </div>
+    </div>
   </div>
 </div>
 
