@@ -26,6 +26,8 @@ export class EventListComponent implements OnInit {
     this.setLists();
     this.eventListCopy = [...this.eventList];
     this.inviteListCopy = [...this.inviteList];
+    this.to = "";
+    this.from = "";
     this.sub = this.data.$user.subscribe((user) => {
       this.user = user;
       this.eventList = this.user.events.sort(function(a, b){return Date.parse(a.date) - Date.parse(b.date)});
@@ -55,6 +57,10 @@ export class EventListComponent implements OnInit {
   }
 
   filter(){
+    if(this.from === "" || this.to === ""){
+      alert("Please fill in all date inputs!");
+      return;
+    }
     if(this.isEventList === true){
       this.eventList = [];
       for(let event of this.eventListCopy){
@@ -70,6 +76,12 @@ export class EventListComponent implements OnInit {
         }
       }
     }
-    console.log(this.eventList);
+  }
+
+  showAll(){
+    this.eventList = this.eventListCopy;
+    this.inviteList = this.inviteListCopy;
+    this.from = "";
+    this.to = "";
   }
 }

@@ -8,7 +8,8 @@
     <div class="sort">
       <span>From: <input type="date" [(ngModel)]="from"></span>
       <span>To: <input type="date" [(ngModel)]="to"></span>
-      <button (click)="filter()">Filter</button>
+      <button (click)="filter()">Filter</button><br>
+      <button (click)="showAll()">Show All</button>
     </div>
     <div>
       <app-event *ngFor="let event of this.getEventList()"
@@ -19,6 +20,12 @@
   </div>
   <div *ngIf="isEventList === false">
     <div><h1>My Invitations</h1></div>
+    <div class="sort">
+      <span>From: <input type="date" [(ngModel)]="from"></span>
+      <span>To: <input type="date" [(ngModel)]="to"></span>
+      <button (click)="filter()">Filter</button><br>
+      <button (click)="showAll()">Show All</button>
+    </div>
     <div>
       <app-event *ngFor="let event of this.getInvitationsList()"
                  [event]="event" [isEventList]="this.isEventList">
