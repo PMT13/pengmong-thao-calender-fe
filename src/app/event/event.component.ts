@@ -3,7 +3,6 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Subscription } from 'rxjs';
 import { DataService } from '../data.service';
 import {IEvent} from "../interfaces/IEvent";
-import {v4 as uuidv4} from "uuid";
 
 @Component({
   selector: 'app-event',
@@ -63,6 +62,7 @@ export class EventComponent implements OnInit {
     if (eventIndex > -1) {
       userCopy.events[eventIndex] = newEvent;
       this.data.updateUser(userCopy);
+      this.data.setUser(userCopy);
       this.modalService.dismissAll();
       for(let i = 0; i < this.data.getAccountList().length; i++){
         const inviteIndex = this.data.getAccountList()[i].invitations.findIndex(event => event.id === this.event.id);

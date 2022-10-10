@@ -10,22 +10,31 @@
           "name": "1",
           "date": "1111-11-11",
           "creator": "12b3a3e8-27a6-476e-8c69-33bbd6045c93"
-        },
-        {
-          "id": "bf12cb2e-bd69-4c15-a03a-29d36ad4c6c6",
-          "name": "3",
-          "date": "3333-03-31",
-          "description": "",
-          "creator": "12b3a3e8-27a6-476e-8c69-33bbd6045c93"
         }
       ],
-      "invitations": []
+      "invitations": [
+        {
+          "id": "58bc0f7a-2e0c-4ee9-813e-42ee99550ef2",
+          "name": "Peng's Birthday",
+          "date": "2021-01-21",
+          "description": "happy birthday",
+          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
+        }
+      ]
     },
     {
       "id": "394ea744-97cc-40b7-ae1c-efdfd27902c9",
       "username": "new",
       "password": "guy",
-      "events": [],
+      "events": [
+        {
+          "id": "58bc0f7a-2e0c-4ee9-813e-42ee99550ef2",
+          "name": "Peng's Birthday",
+          "date": "2021-01-21",
+          "description": "happy birthday",
+          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
+        }
+      ],
       "invitations": [
         {
           "id": "6c67e343-20f3-4448-9b08-5583cddce6f6",
@@ -49,7 +58,15 @@
           "creator": "31733a0e-72a3-43c0-af50-b14f19a6578b"
         }
       ],
-      "invitations": []
+      "invitations": [
+        {
+          "id": "58bc0f7a-2e0c-4ee9-813e-42ee99550ef2",
+          "name": "Peng's Birthday",
+          "date": "2021-01-21",
+          "description": "happy birthday",
+          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
+        }
+      ]
     },
     {
       "id": "aee2b475-e361-48b8-b1ba-4bea70e34f69",
@@ -57,6 +74,13 @@
       "password": "123",
       "events": [],
       "invitations": [
+        {
+          "id": "58bc0f7a-2e0c-4ee9-813e-42ee99550ef2",
+          "name": "Peng's Birthday",
+          "date": "2021-01-21",
+          "description": "happy birthday",
+          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
+        },
         {
           "id": "6c67e343-20f3-4448-9b08-5583cddce6f6",
           "name": "1's event",
