@@ -6,33 +6,44 @@
       "password": "thao",
       "events": [
         {
-          "id": "7b453f9d-29ad-4438-9acf-e7b4ad63c3dd",
-          "name": "1",
-          "date": "1111-11-11",
+          "id": "83803dcb-3469-4a92-ab78-f9a2151e7212",
+          "name": "Doctor's Appointment",
+          "date": "2022-10-13",
+          "place": "St.Paul, MN",
+          "description": "Skin care :(",
+          "creator": "12b3a3e8-27a6-476e-8c69-33bbd6045c93"
+        },
+        {
+          "id": "c22fd6af-fedd-4316-b86b-1655d6d97014",
+          "name": "Fishing Trip",
+          "date": "2023-01-21",
+          "place": "St.Croix River",
+          "description": "Ice fishing trip on the St.Croix River. ",
           "creator": "12b3a3e8-27a6-476e-8c69-33bbd6045c93"
         }
       ],
       "invitations": [
         {
-          "id": "58bc0f7a-2e0c-4ee9-813e-42ee99550ef2",
-          "name": "Peng's Birthday",
-          "date": "2021-01-21",
-          "description": "happy birthday",
-          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
+          "event": {
+            "id": "aad098c2-8e3f-413a-b25f-06d6bd840602",
+            "name": "My Birthday",
+            "date": "2022-11-22",
+            "place": "Home",
+            "description": "Celebrate my birthday with me!",
+            "creator": "aee2b475-e361-48b8-b1ba-4bea70e34f69"
+          },
+          "accepted": true
         },
         {
-          "id": "322d4fa4-a753-4353-af26-c6ea2f6962e9",
-          "name": "Random",
-          "date": "2022-07-15",
-          "description": "sfgdfgdfsyhrghdfsbvdfgdsg",
-          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
-        },
-        {
-          "id": "6c67e343-20f3-4448-9b08-5583cddce6f6",
-          "name": "1's event",
-          "date": "2022-11-01",
-          "description": "!'s fun event",
-          "creator": "31733a0e-72a3-43c0-af50-b14f19a6578b"
+          "event": {
+            "id": "ae9d99eb-f754-4c55-87a9-c9e6e0dad454",
+            "name": "Bowling with Timmy",
+            "date": "2022-12-25",
+            "place": "Stars and Strike",
+            "description": "Christmas Bowling!",
+            "creator": "aee2b475-e361-48b8-b1ba-4bea70e34f69"
+          },
+          "accepted": true
         }
       ]
     },
@@ -40,43 +51,18 @@
       "id": "394ea744-97cc-40b7-ae1c-efdfd27902c9",
       "username": "new",
       "password": "guy",
-      "events": [
-        {
-          "id": "58bc0f7a-2e0c-4ee9-813e-42ee99550ef2",
-          "name": "Peng's Birthday",
-          "date": "2021-01-21",
-          "description": "happy birthday",
-          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
-        },
-        {
-          "id": "322d4fa4-a753-4353-af26-c6ea2f6962e9",
-          "name": "Random",
-          "date": "2022-07-15",
-          "description": "sfgdfgdfsyhrghdfsbvdfgdsg",
-          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
-        },
-        {
-          "id": "5bfabf98-8085-4152-ae5c-2b165ca11097",
-          "name": "Timberwolves Game",
-          "date": "2022-10-09",
-          "description": "Bally Sports North",
-          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
-        },
-        {
-          "id": "0c029e8f-bc7d-4fa8-8e5f-d494499c5fdb",
-          "name": "Event",
-          "date": "2022-11-11",
-          "description": "efsafdgdsgdsgs",
-          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
-        }
-      ],
+      "events": [],
       "invitations": [
         {
-          "id": "6c67e343-20f3-4448-9b08-5583cddce6f6",
-          "name": "1's event",
-          "date": "2022-11-01",
-          "description": "!'s fun event",
-          "creator": "31733a0e-72a3-43c0-af50-b14f19a6578b"
+          "event": {
+            "id": "aad098c2-8e3f-413a-b25f-06d6bd840602",
+            "name": "My Birthday",
+            "date": "2022-11-22",
+            "place": "Home",
+            "description": "Celebrate my birthday with me!",
+            "creator": "aee2b475-e361-48b8-b1ba-4bea70e34f69"
+          },
+          "accepted": false
         }
       ]
     },
@@ -84,60 +70,40 @@
       "id": "31733a0e-72a3-43c0-af50-b14f19a6578b",
       "username": "1",
       "password": "1",
-      "events": [
-        {
-          "id": "6c67e343-20f3-4448-9b08-5583cddce6f6",
-          "name": "1's event",
-          "date": "2022-11-01",
-          "description": "!'s fun event",
-          "creator": "31733a0e-72a3-43c0-af50-b14f19a6578b"
-        }
-      ],
-      "invitations": [
-        {
-          "id": "58bc0f7a-2e0c-4ee9-813e-42ee99550ef2",
-          "name": "Peng's Birthday",
-          "date": "2021-01-21",
-          "description": "happy birthday",
-          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
-        },
-        {
-          "id": "5bfabf98-8085-4152-ae5c-2b165ca11097",
-          "name": "Timberwolves Game",
-          "date": "2022-10-09",
-          "description": "Bally Sports North",
-          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
-        }
-      ]
+      "events": [],
+      "invitations": []
     },
     {
       "id": "aee2b475-e361-48b8-b1ba-4bea70e34f69",
       "username": "Timmy",
       "password": "123",
-      "events": [],
-      "invitations": [
+      "events": [
         {
-          "id": "58bc0f7a-2e0c-4ee9-813e-42ee99550ef2",
-          "name": "Peng's Birthday",
-          "date": "2021-01-21",
-          "description": "happy birthday",
-          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
+          "id": "aad098c2-8e3f-413a-b25f-06d6bd840602",
+          "name": "My Birthday",
+          "date": "2022-11-22",
+          "place": "Home",
+          "description": "Celebrate my birthday with me!",
+          "creator": "aee2b475-e361-48b8-b1ba-4bea70e34f69"
         },
         {
-          "id": "6c67e343-20f3-4448-9b08-5583cddce6f6",
-          "name": "1's event",
-          "date": "2022-11-01",
-          "description": "!'s fun event",
-          "creator": "31733a0e-72a3-43c0-af50-b14f19a6578b"
+          "id": "ae9d99eb-f754-4c55-87a9-c9e6e0dad454",
+          "name": "Bowling with Timmy",
+          "date": "2022-12-25",
+          "place": "Stars and Strike",
+          "description": "Christmas Bowling!",
+          "creator": "aee2b475-e361-48b8-b1ba-4bea70e34f69"
         },
         {
-          "id": "5bfabf98-8085-4152-ae5c-2b165ca11097",
-          "name": "Timberwolves Game",
-          "date": "2022-10-09",
-          "description": "Bally Sports North",
-          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
+          "id": "fc72f278-09ef-4e4b-87c3-f0a16fa8827a",
+          "name": "Timmy's Event",
+          "date": "2023-01-01",
+          "place": "Earth",
+          "description": "First Day of 2023!",
+          "creator": "aee2b475-e361-48b8-b1ba-4bea70e34f69"
         }
-      ]
+      ],
+      "invitations": []
     }
   ]
 }

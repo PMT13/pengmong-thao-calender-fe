@@ -15,6 +15,7 @@ export class AddEventComponent implements OnInit {
   name!: string;
   date!: string;
   description!: string;
+  place!: string;
 
   sub: Subscription;
 
@@ -39,6 +40,7 @@ export class AddEventComponent implements OnInit {
         id: uuidv4(),
         name: this.name,
         date: this.date,
+        place: this.place,
         description: this.description,
         creator: this.creator
       }

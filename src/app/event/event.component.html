@@ -1,17 +1,33 @@
 <div class="card text-center">
   <div class="card-header">{{event.date}}</div>
   <div class="card-body">
-    <div class="card-title">
-      <strong>{{event.name}}</strong>
-      <div *ngIf="isEventList === false">Invited by: {{creator}}</div>
-    </div>
-    <p class="card-text">{{event.description}}</p>
-    <div class="btn-group" role="group">
-      <button class="btn btn-danger" (click)="delete()" *ngIf="isEventList === true">Delete</button>
-      <button class="btn btn-primary" (click)="open(content)" *ngIf="isEventList === true">Edit</button>
-      <div class="btn-group" role="group">
-        <app-invite-users [event]="event" *ngIf="isEventList === true"></app-invite-users>
+    <div *ngIf="isEventList === true">
+      <div class="card-title">
+        <strong>{{event.name}}</strong>
+        <div>{{event.place}}</div>
       </div>
+      <p class="card-text">{{event.description}}</p>
+      <div class="btn-group" role="group" *ngIf="isEventList === true">
+        <button class="btn btn-danger" (click)="delete()">Delete</button>
+        <button class="btn btn-primary" (click)="open(content)">Edit</button>
+        <div class="btn-group" role="group">
+          <app-invite-users [event]="event"></app-invite-users>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="isEventList === false">
+      <div class="card-title">
+        <strong>{{invite.event.name}}</strong>
+        <div>{{invite.event.place}}</div>
+        <div *ngIf="isEventList === false">Invited by: {{creator}}</div>
+      </div>
+      <p class="card-text">{{invite.event.description}}</p>
+    </div>
+    <div class="alert alert-success" role="alert" *ngIf="invite.accepted === true">Accepted!</div>
+    <button class="btn btn-primary" *ngIf="invite.accepted === true" (click)="invite.accepted = false">Change status</button>
+    <div class="btn-group" role="group" *ngIf="isEventList === false && invite.accepted === false">
+      <button class="btn btn-danger" (click)="decline()">Decline</button>
+      <button class="btn btn-success" (click)="accept()">Accept</button>
     </div>
   </div>
 </div>

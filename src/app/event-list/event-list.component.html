@@ -22,7 +22,7 @@
     </div>
     <div class="row row-cols-3">
       <app-event *ngFor="let event of this.getEventList()"
-                 [event]="event" [isEventList]="this.isEventList">
+                 [event]="event" [isEventList]="this.isEventList" [invite]="{event:event,accepted: false}">
       </app-event>
     </div>
     <app-add-event></app-add-event>
@@ -45,8 +45,8 @@
       <button class="btn btn-primary" (click)="showAll()">Show All</button>
     </div>
     <div class="row row-cols-3">
-      <app-event *ngFor="let event of this.getInvitationsList()"
-                 [event]="event" [isEventList]="this.isEventList">
+      <app-event *ngFor="let invite of this.getInvitationsList()"
+                 [invite]="invite" [isEventList]="this.isEventList" [event]="invite.event">
       </app-event>
     </div>
   </div>
