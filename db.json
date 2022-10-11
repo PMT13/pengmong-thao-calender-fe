@@ -6,136 +6,61 @@
       "password": "thao",
       "events": [
         {
-          "id": "7b453f9d-29ad-4438-9acf-e7b4ad63c3dd",
-          "name": "1",
-          "date": "1111-11-11",
+          "id": "e0e6e010-7fbd-49d9-a08c-084854e2d00b",
+          "name": "Peng's First Event",
+          "date": "2023-01-21",
+          "place": "Home",
+          "description": "Do nothing and just relax.",
           "creator": "12b3a3e8-27a6-476e-8c69-33bbd6045c93"
         }
       ],
       "invitations": [
         {
-          "id": "58bc0f7a-2e0c-4ee9-813e-42ee99550ef2",
-          "name": "Peng's Birthday",
-          "date": "2021-01-21",
-          "description": "happy birthday",
-          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
-        },
-        {
-          "id": "322d4fa4-a753-4353-af26-c6ea2f6962e9",
-          "name": "Random",
-          "date": "2022-07-15",
-          "description": "sfgdfgdfsyhrghdfsbvdfgdsg",
-          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
-        },
-        {
-          "id": "6c67e343-20f3-4448-9b08-5583cddce6f6",
-          "name": "1's event",
-          "date": "2022-11-01",
-          "description": "!'s fun event",
-          "creator": "31733a0e-72a3-43c0-af50-b14f19a6578b"
+          "event": {
+            "id": "ba8cbe01-fae1-444b-a238-4cc27daa447b",
+            "name": "Timberwolves vs Lakers",
+            "date": "2022-10-12",
+            "place": "Anoka, MN",
+            "description": "Watch the Timberwolves game vs the Lakers on Bally Sports.",
+            "creator": "37e78f4e-1727-4dbb-9817-a8de4d8f9ba6"
+          },
+          "accepted": true
         }
       ]
     },
     {
-      "id": "394ea744-97cc-40b7-ae1c-efdfd27902c9",
-      "username": "new",
-      "password": "guy",
+      "id": "37e78f4e-1727-4dbb-9817-a8de4d8f9ba6",
+      "username": "user",
+      "password": "password",
       "events": [
         {
-          "id": "58bc0f7a-2e0c-4ee9-813e-42ee99550ef2",
-          "name": "Peng's Birthday",
-          "date": "2021-01-21",
-          "description": "happy birthday",
-          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
+          "id": "ba8cbe01-fae1-444b-a238-4cc27daa447b",
+          "name": "Timberwolves vs Lakers",
+          "date": "2022-10-12",
+          "place": "Anoka, MN",
+          "description": "Watch the Timberwolves game vs the Lakers on Bally Sports.",
+          "creator": "37e78f4e-1727-4dbb-9817-a8de4d8f9ba6"
         },
         {
-          "id": "322d4fa4-a753-4353-af26-c6ea2f6962e9",
-          "name": "Random",
-          "date": "2022-07-15",
-          "description": "sfgdfgdfsyhrghdfsbvdfgdsg",
-          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
-        },
-        {
-          "id": "5bfabf98-8085-4152-ae5c-2b165ca11097",
-          "name": "Timberwolves Game",
-          "date": "2022-10-09",
-          "description": "Bally Sports North",
-          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
-        },
-        {
-          "id": "0c029e8f-bc7d-4fa8-8e5f-d494499c5fdb",
-          "name": "Event",
-          "date": "2022-11-11",
-          "description": "efsafdgdsgdsgs",
-          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
+          "id": "0de1ab65-0c23-435f-93b9-5365e3aae50a",
+          "name": "B2E Optum Start Date",
+          "date": "2022-12-11",
+          "place": "Eden Prairie, MN",
+          "description": "Expected start date for Optum job. May be subject to change. ",
+          "creator": "37e78f4e-1727-4dbb-9817-a8de4d8f9ba6"
         }
       ],
       "invitations": [
         {
-          "id": "6c67e343-20f3-4448-9b08-5583cddce6f6",
-          "name": "1's event",
-          "date": "2022-11-01",
-          "description": "!'s fun event",
-          "creator": "31733a0e-72a3-43c0-af50-b14f19a6578b"
-        }
-      ]
-    },
-    {
-      "id": "31733a0e-72a3-43c0-af50-b14f19a6578b",
-      "username": "1",
-      "password": "1",
-      "events": [
-        {
-          "id": "6c67e343-20f3-4448-9b08-5583cddce6f6",
-          "name": "1's event",
-          "date": "2022-11-01",
-          "description": "!'s fun event",
-          "creator": "31733a0e-72a3-43c0-af50-b14f19a6578b"
-        }
-      ],
-      "invitations": [
-        {
-          "id": "58bc0f7a-2e0c-4ee9-813e-42ee99550ef2",
-          "name": "Peng's Birthday",
-          "date": "2021-01-21",
-          "description": "happy birthday",
-          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
-        },
-        {
-          "id": "5bfabf98-8085-4152-ae5c-2b165ca11097",
-          "name": "Timberwolves Game",
-          "date": "2022-10-09",
-          "description": "Bally Sports North",
-          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
-        }
-      ]
-    },
-    {
-      "id": "aee2b475-e361-48b8-b1ba-4bea70e34f69",
-      "username": "Timmy",
-      "password": "123",
-      "events": [],
-      "invitations": [
-        {
-          "id": "58bc0f7a-2e0c-4ee9-813e-42ee99550ef2",
-          "name": "Peng's Birthday",
-          "date": "2021-01-21",
-          "description": "happy birthday",
-          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
-        },
-        {
-          "id": "6c67e343-20f3-4448-9b08-5583cddce6f6",
-          "name": "1's event",
-          "date": "2022-11-01",
-          "description": "!'s fun event",
-          "creator": "31733a0e-72a3-43c0-af50-b14f19a6578b"
-        },
-        {
-          "id": "5bfabf98-8085-4152-ae5c-2b165ca11097",
-          "name": "Timberwolves Game",
-          "date": "2022-10-09",
-          "description": "Bally Sports North",
-          "creator": "394ea744-97cc-40b7-ae1c-efdfd27902c9"
+          "event": {
+            "id": "e0e6e010-7fbd-49d9-a08c-084854e2d00b",
+            "name": "Peng's First Event",
+            "date": "2023-01-21",
+            "place": "Home",
+            "description": "Do nothing and just relax.",
+            "creator": "12b3a3e8-27a6-476e-8c69-33bbd6045c93"
+          },
+          "accepted": true
         }
       ]
     }

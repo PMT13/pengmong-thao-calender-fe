@@ -9,3 +9,14 @@
   margin-top: calc(var(--bs-gutter-x) * .5);
   margin-bottom: calc(var(--bs-gutter-x) * .5);
 }
+
+.alert{
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+}
+
+#replyDiv{
+  margin-top: 4%;
+}

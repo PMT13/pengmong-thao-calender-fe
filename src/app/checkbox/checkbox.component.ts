@@ -17,7 +17,7 @@ export class CheckboxComponent implements OnInit {
   constructor(private data: DataService) { }
 
   ngOnInit(): void {
-    if(this.account.invitations.find(event => event.id === this.event.id) !== undefined){
+    if(this.account.invitations.find(invite => invite.event.id === this.event.id) !== undefined){
       this.checked = true;
     }else{
       this.checked = false;
@@ -26,11 +26,11 @@ export class CheckboxComponent implements OnInit {
 
   // When a checkbox is checked/unchecked, add/remove the event to/from the corresponding (with the checkbox) account
   invite(account: IAccount){
-    if(account.invitations.find(event => event.id === this.event.id)){
-      account.invitations = account.invitations.filter( event => event.id !== this.event.id);
+    if(account.invitations.find(invite => invite.event.id === this.event.id)){
+      account.invitations = account.invitations.filter(invite => invite.event.id !== this.event.id);
       this.data.updateUser(account);
     }else{
-      account.invitations.push(this.event);
+      account.invitations.push({event: this.event, accepted: false});
       this.data.updateUser(account);
     }
   }
