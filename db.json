@@ -63,6 +63,22 @@
           "accepted": true
         }
       ]
+    },
+    {
+      "id": "b3550cc6-2f57-4f84-98e7-6af2d1abce8b",
+      "username": "user2",
+      "password": "password",
+      "events": [
+        {
+          "id": "c7c3c6db-be52-42f2-8237-a0af95b226ce",
+          "name": "My First Event",
+          "date": "2022-11-11",
+          "place": "State, Country",
+          "description": "My first non-existent event! :D",
+          "creator": "b3550cc6-2f57-4f84-98e7-6af2d1abce8b"
+        }
+      ],
+      "invitations": []
     }
   ]
 }
