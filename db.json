@@ -17,17 +17,6 @@
       "invitations": [
         {
           "event": {
-            "id": "2f8ab43b-a346-4422-a2bc-7e92fb507e78",
-            "name": "Undisputed",
-            "date": "2022-10-11",
-            "place": "Minnesota",
-            "description": "Watching Undisputed on Youtube",
-            "creator": "37e78f4e-1727-4dbb-9817-a8de4d8f9ba6"
-          },
-          "accepted": true
-        },
-        {
-          "event": {
             "id": "ba8cbe01-fae1-444b-a238-4cc27daa447b",
             "name": "Timberwolves vs Lakers",
             "date": "2022-10-12",
@@ -44,14 +33,6 @@
       "username": "user",
       "password": "password",
       "events": [
-        {
-          "id": "2f8ab43b-a346-4422-a2bc-7e92fb507e78",
-          "name": "Undisputed",
-          "date": "2022-10-11",
-          "place": "Minnesota",
-          "description": "Watching Undisputed on Youtube",
-          "creator": "37e78f4e-1727-4dbb-9817-a8de4d8f9ba6"
-        },
         {
           "id": "ba8cbe01-fae1-444b-a238-4cc27daa447b",
           "name": "Timberwolves vs Lakers",
