@@ -54,6 +54,7 @@ input:checked + .slider:before {
 h1{
   text-align: center;
   text-decoration: underline;
+  color:white;
 }
 .sort{
   text-align: center;
