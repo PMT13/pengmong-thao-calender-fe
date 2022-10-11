@@ -57,5 +57,6 @@ export class AddEventComponent implements OnInit {
     this.name = "";
     this.date = "";
     this.description = "";
+    this.place = "";
   }
 }

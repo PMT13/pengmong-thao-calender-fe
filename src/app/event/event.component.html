@@ -25,7 +25,7 @@
     </div>
     <div class="alert alert-success" role="alert" *ngIf="invite.accepted === true">Accepted!</div>
     <button class="btn btn-primary" *ngIf="invite.accepted === true" (click)="invite.accepted = false">Change status</button>
-    <div class="btn-group" role="group" *ngIf="isEventList === false && invite.accepted === false">
+    <div class="btn-group" role="group" id="replyDiv" *ngIf="isEventList === false && invite.accepted === false">
       <button class="btn btn-danger" (click)="decline()">Decline</button>
       <button class="btn btn-success" (click)="accept()">Accept</button>
     </div>
@@ -42,11 +42,15 @@
       <div class="mb-3">
         <label for="name">Event Name:</label>
         <div class="input-group">
-          <input id="name" class="form-control" type="text" name="name" [(ngModel)]="name">
+          <input id="name" class="form-control" type="text" name="name" [(ngModel)]="name" required>
         </div>
         <label for="date">Date of Event:</label>
         <div class="input-group">
-          <input id="date" name="date" class="form-control" type="date" [(ngModel)]="date">
+          <input id="date" name="date" class="form-control" type="date" [(ngModel)]="date" required>
+        </div>
+        <label for="place">Location:</label>
+        <div class="input-group">
+          <input id="place" class="form-control" type="text" name="place" [(ngModel)]="place" required>
         </div>
         <label for="description">Description:</label>
         <div class="input-group">
