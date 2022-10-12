@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
 import {DataService} from "./data.service";
 import {Subscription} from "rxjs";
 
@@ -7,7 +7,7 @@ import {Subscription} from "rxjs";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnDestroy{
   title = 'event-tracker';
 
   private isLoggedIn: boolean = false;
@@ -17,6 +17,10 @@ export class AppComponent {
     this.sub = this.data.$isLoggedIn.subscribe((status) => {
       this.isLoggedIn = status;
     });
+  }
+
+  ngOnDestroy(){
+    this.sub.unsubscribe();
   }
 
   getLoginStatus(){

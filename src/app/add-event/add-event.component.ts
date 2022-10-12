@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
 import {DataService} from "../data.service";
 import {Subscription} from "rxjs";
@@ -9,7 +9,7 @@ import {v4 as uuidv4} from "uuid";
   templateUrl: './add-event.component.html',
   styleUrls: ['./add-event.component.css']
 })
-export class AddEventComponent implements OnInit {
+export class AddEventComponent implements OnInit,OnDestroy {
 
   creator!: string;
   name!: string;
@@ -33,12 +33,17 @@ export class AddEventComponent implements OnInit {
     this.resetInput();
   }
 
+  ngOnDestroy(){
+    this.sub.unsubscribe();
+  }
+
+  // open the modal window
   open(content:any) {
     this.modalService.open(content);
   }
 
   // Creates a new IEvent object, pushes that object into the logged-in user's
-  // "events" array, and updates information in the data service
+  // "events" array, and updates information in the data service and current user info
   addToList(){
     if(this.name === "" || this.date === "" ||
         this.place === "" || this.start === "" ||

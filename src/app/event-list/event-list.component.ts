@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import {Subscription} from "rxjs";
 import {DataService} from "../data.service";
 import {IAccount} from "../interfaces/IAccount";
@@ -10,7 +10,7 @@ import { IInvite } from '../interfaces/IInvite';
   templateUrl: './event-list.component.html',
   styleUrls: ['./event-list.component.css']
 })
-export class EventListComponent implements OnInit {
+export class EventListComponent implements OnInit,OnDestroy {
 
   isEventList: boolean = true;
   from!: string;
@@ -47,10 +47,16 @@ export class EventListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  ngOnDestroy(): void{
+    this.sub.unsubscribe();
+  }
+
+  // Initialize the two different lists (events and invites)
   setLists(){
     this.eventList = this.user.events.sort(function(a, b){return Date.parse(a.date) - Date.parse(b.date)});
     this.inviteList = this.user.invitations.sort(function(a, b){return Date.parse(a.event.date) - Date.parse(b.event.date)});
   }
+
   getUser(){
     return this.user;
   }
@@ -63,6 +69,8 @@ export class EventListComponent implements OnInit {
     return this.inviteList;
   }
 
+  // Convert event date strings to milliseconds and compare them with the given filter (FROM one date TO another date)
+  // and then push them to the list that will be displayed if they fit the criteria
   filter(){
     this.error = false;
     if(this.from === "" || this.to === ""){
@@ -87,6 +95,7 @@ export class EventListComponent implements OnInit {
     }
   }
 
+  // Display all the events instead of just the filtered ones.
   showAll(){
     this.error = false;
     this.eventList = this.eventListCopy;
@@ -95,11 +104,13 @@ export class EventListComponent implements OnInit {
     this.to = "";
   }
 
+  // Switch between user's events to their event invitations from other users
   switchLists(){
     this.isEventList = !this.isEventList;
     this.error = false;
   }
 
+  // Sort the events by time (Date + Hour + Minute)
   sortEventsByTime(events: IEvent[]){
     events.sort(function(a, b){
       const aStart = a.start.split(':');
@@ -108,6 +119,7 @@ export class EventListComponent implements OnInit {
     });
   }
 
+  // Sort the invites by time (Date + Hour + Minute)
   sortInvitesByTime(invites: IInvite[]){
     invites.sort(function(a, b){
       const aStart = a.event.start.split(':');

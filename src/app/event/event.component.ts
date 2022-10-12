@@ -47,6 +47,8 @@ export class EventComponent implements OnInit {
     this.modalService.open(content);
   }
 
+  // Delete the slected event from the user's events and other user's invitations list if they were invited to it.
+  // Update the data service and set the user with the updated user information
   delete(){
     const userCopy = this.data.getUser();
     userCopy.events = userCopy.events.filter(event => event.id !== this.event.id);
@@ -58,6 +60,9 @@ export class EventComponent implements OnInit {
     }
   }
 
+  // Update any traces of the event(in user's event[] or in other user's invitations[]
+  // Update user in data service and set current user to updated user
+  // Make sure user can't edit blank information when editting
   save(){
     if(this.name === "" || this.date === "" ||
       this.place === "" || this.start === "" ||
@@ -95,6 +100,8 @@ export class EventComponent implements OnInit {
     }
   }
 
+  // If user declines an invitation, delete it from their invitations list
+  // Update the data service information and update the current user information
   decline(){
     const updatedInvites = this.data.getUser().invitations.filter(invite => invite.event.id !== this.event.id);
     this.data.getUser().invitations = updatedInvites;
@@ -102,6 +109,7 @@ export class EventComponent implements OnInit {
     this.data.setUser(this.data.getUser());
   }
 
+  // If user accepts invitation, display a message to indicate this and update data
   accept(){
     const inviteIndex = this.data.getUser().invitations.findIndex(invite => invite.event.id === this.event.id);
     this.data.getUser().invitations[inviteIndex].accepted = true;
@@ -109,6 +117,8 @@ export class EventComponent implements OnInit {
     this.data.setUser(this.data.getUser());
   }
 
+  // If a user cancels their editting, return event values back to the their
+  // original values before the editting started
   resetInput(){
     this.name = this.event.name;
     this.date = this.event.date;

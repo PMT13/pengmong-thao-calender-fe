@@ -1,5 +1,5 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {first} from "rxjs";
+import {Component, OnDestroy, OnInit, Output} from '@angular/core';
+import {first, Subscription} from "rxjs";
 import {IAccount} from "../interfaces/IAccount";
 import {DataService} from "../data.service";
 import {HttpService} from "../http.service";
@@ -9,22 +9,29 @@ import {HttpService} from "../http.service";
   templateUrl: './nav-bar.component.html',
   styleUrls: ['./nav-bar.component.css']
 })
-export class NavBarComponent implements OnInit {
+export class NavBarComponent implements OnInit,OnDestroy {
 
-  @Output() onLog = new EventEmitter<boolean>();
   isLoggedIn: boolean = this.data.getLoginStatus();
   user: IAccount = this.data.getUser();
 
+  sub:Subscription;
+  subTwo: Subscription;
+
   constructor(private data: DataService) {
-    this.data.$isLoggedIn.subscribe((isLoggedIn) => {
+    this.sub = this.data.$isLoggedIn.subscribe((isLoggedIn) => {
       this.isLoggedIn = isLoggedIn;
     });
-    this.data.$user.subscribe((user) => {
+    this.subTwo = this.data.$user.subscribe((user) => {
       this.user = user;
     });
   }
 
   ngOnInit(): void {
+  }
+
+  ngOnDestroy(){
+    this.sub.unsubscribe();
+    this.subTwo.unsubscribe();
   }
 
   logout(){

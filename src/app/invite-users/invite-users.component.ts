@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnDestroy, OnInit} from '@angular/core';
 import {Subscription} from "rxjs";
 import {DataService} from "../data.service";
 import {IAccount} from "../interfaces/IAccount";
@@ -9,7 +9,7 @@ import {IEvent} from "../interfaces/IEvent";
   templateUrl: './invite-users.component.html',
   styleUrls: ['./invite-users.component.css']
 })
-export class InviteUsersComponent implements OnInit {
+export class InviteUsersComponent implements OnInit,OnDestroy {
 
   @Input() event!: IEvent;
   accountList!: IAccount[];
@@ -26,5 +26,8 @@ export class InviteUsersComponent implements OnInit {
     this.accountList = this.data.getAccountList();
     const thisUser = this.data.getUser().id;
     this.accountList = this.accountList.filter(account => account.id !== thisUser);
+  }
+  ngOnDestroy(): void{
+    this.sub.unsubscribe();
   }
 }

@@ -50,7 +50,7 @@ export class LoginComponent implements OnInit,OnDestroy {
     }
   }
 
-  // Checks if account exists, makes sure input fields aren't empty/are valid, creates a
+  // Checks if username already exists, makes sure input fields aren't empty/are valid, and creates a
   // new user and sends post request to http service
   register(){
     const accountExist = this.accountList.find((account) => {return account.username === this.username});
