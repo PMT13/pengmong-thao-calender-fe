@@ -37,7 +37,11 @@ export class EventListComponent implements OnInit {
       this.inviteList = this.user.invitations.sort(function(a, b){return Date.parse(a.event.date) - Date.parse(b.event.date)});
       this.eventListCopy = [...this.eventList];
       this.inviteListCopy = [...this.inviteList];
+      this.sortEventsByTime(this.eventList);
+      this.sortInvitesByTime(this.inviteList);
     });
+    this.sortEventsByTime(this.eventList);
+    this.sortInvitesByTime(this.inviteList);
   }
 
   ngOnInit(): void {
@@ -94,5 +98,21 @@ export class EventListComponent implements OnInit {
   switchLists(){
     this.isEventList = !this.isEventList;
     this.error = false;
+  }
+
+  sortEventsByTime(events: IEvent[]){
+    events.sort(function(a, b){
+      const aStart = a.start.split(':');
+      const bStart = b.start.split(':');
+      return (Date.parse(a.date) + parseInt(aStart[0]) * 3600000 + parseInt(aStart[1]) * 60000) - (Date.parse(b.date) + parseInt(bStart[0]) * 3600000 + parseInt(bStart[1]) * 60000);
+    });
+  }
+
+  sortInvitesByTime(invites: IInvite[]){
+    invites.sort(function(a, b){
+      const aStart = a.event.start.split(':');
+      const bStart = b.event.start.split(':');
+      return (Date.parse(a.event.date) + parseInt(aStart[0]) * 3600000 + parseInt(aStart[1]) * 60000) - (Date.parse(b.event.date) + parseInt(bStart[0]) * 3600000 + parseInt(bStart[1]) * 60000);
+    });
   }
 }
