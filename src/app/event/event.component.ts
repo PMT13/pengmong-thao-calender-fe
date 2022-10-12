@@ -23,6 +23,8 @@ export class EventComponent implements OnInit {
   place!: string;
   start!: string;
   end!: string;
+  error: boolean = false;
+  errorMsg!: string;
 
   constructor(private modalService: NgbModal, private data: DataService) {}
 
@@ -57,6 +59,13 @@ export class EventComponent implements OnInit {
   }
 
   save(){
+    if(this.name === "" || this.date === "" ||
+      this.place === "" || this.start === "" ||
+      this.end === ""){
+      this.error = true;
+      this.errorMsg = "All fields required to add to list (except description)";
+      return;
+    }
     const newEvent =
       {
         id: this.id,
@@ -82,6 +91,7 @@ export class EventComponent implements OnInit {
           this.data.updateUser(this.data.getAccountList()[i]);
         }
       }
+      this.error = false;
     }
   }
 
@@ -103,6 +113,9 @@ export class EventComponent implements OnInit {
     this.name = this.event.name;
     this.date = this.event.date;
     this.description = this.event.description;
-    this.place = "";
+    this.place = this.event.place;
+    this.start = this.event.start;
+    this.end = this.event.end;
+    this.error = false;
   }
 }

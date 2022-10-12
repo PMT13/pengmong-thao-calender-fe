@@ -7,25 +7,26 @@
   <div class="modal-body">
     <form>
       <div class="mb-3">
+        <div class="alert alert-danger" role="alert" *ngIf="error === true">{{errorMsg}}</div>
         <label for="name">Event Name:</label>
         <div class="input-group">
-          <input id="name" class="form-control" type="text" name="name" [(ngModel)]="name">
+          <input id="name" class="form-control" type="text" name="name" [(ngModel)]="name" required>
         </div>
         <label for="date">Date of Event:</label>
         <div class="input-group">
-          <input id="date" name="date" class="form-control" type="date" [(ngModel)]="date">
+          <input id="date" name="date" class="form-control" type="date" [(ngModel)]="date" required>
         </div>
         <label for="start">Start Time:</label>
         <div class="input-group">
-          <input id="start" name="start" class="form-control" type="time" [(ngModel)]="start">
+          <input id="start" name="start" class="form-control" type="time" [(ngModel)]="start" required>
         </div>
         <label for="end">End Time:</label>
         <div class="input-group">
-          <input id="end" name="end" class="form-control" type="time" [(ngModel)]="end">
+          <input id="end" name="end" class="form-control" type="time" [(ngModel)]="end" required>
         </div>
         <label for="place">Location:</label>
         <div class="input-group">
-          <input id="place" class="form-control" type="text" name="place" [(ngModel)]="place">
+          <input id="place" class="form-control" type="text" name="place" [(ngModel)]="place" required>
         </div>
         <label for="description">Description:</label>
         <div class="input-group">
@@ -35,6 +36,6 @@
     </form>
   </div>
   <div class="modal-footer">
-    <button type="button" class="btn btn-outline-dark" (click)="addToList()">Add to List</button>
+    <button type="submit" class="btn btn-outline-dark" (click)="addToList()">Add to List</button>
   </div>
 </ng-template>

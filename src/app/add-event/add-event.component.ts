@@ -18,7 +18,8 @@ export class AddEventComponent implements OnInit {
   place!: string;
   start!: string;
   end!: string;
-
+  error: boolean = false;
+  errorMsg!: string;
   sub: Subscription;
 
   constructor(private modalService: NgbModal, private data: DataService) {
@@ -28,7 +29,9 @@ export class AddEventComponent implements OnInit {
     this.creator = this.data.getUser().id;
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.resetInput();
+  }
 
   open(content:any) {
     this.modalService.open(content);
@@ -37,6 +40,13 @@ export class AddEventComponent implements OnInit {
   // Creates a new IEvent object, pushes that object into the logged-in user's
   // "events" array, and updates information in the data service
   addToList(){
+    if(this.name === "" || this.date === "" ||
+        this.place === "" || this.start === "" ||
+        this.end === ""){
+      this.error = true;
+      this.errorMsg = "All fields required to add to list (except description)";
+      return;
+    }
     const newEvent =
       {
         id: uuidv4(),
@@ -64,5 +74,6 @@ export class AddEventComponent implements OnInit {
     this.place = "";
     this.start = "";
     this.end = "";
+    this.error = false;
   }
 }
