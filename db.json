@@ -1,122 +1,87 @@
 {
   "accounts": [
     {
-      "id": "12b3a3e8-27a6-476e-8c69-33bbd6045c93",
+      "id": "96b9ed9a-ae11-4861-9ecf-ccb0b016d0be",
       "username": "peng",
       "password": "thao",
       "events": [
         {
-          "id": "e0e6e010-7fbd-49d9-a08c-084854e2d00b",
+          "id": "c26d7904-c940-4561-b4b4-9f4a3a536df4",
           "name": "Peng's First Event",
-          "date": "2023-01-21",
-          "place": "Home",
-          "start": "11:00",
-          "end": "23:59",
-          "description": "",
-          "creator": "12b3a3e8-27a6-476e-8c69-33bbd6045c93"
+          "date": "2022-10-12",
+          "place": "Anoka, MN",
+          "start": "14:00",
+          "end": "15:00",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Pulvinar neque laoreet suspendisse interdum consectetur libero. Lectus vestibulum mattis ullamcorper velit sed ullamcorper.",
+          "creator": "96b9ed9a-ae11-4861-9ecf-ccb0b016d0be"
+        },
+        {
+          "id": "da6aa694-26e4-4262-9cd9-e3e979da92d3",
+          "name": "Peng's Second Event",
+          "date": "2022-10-22",
+          "place": "St. Paul, MN",
+          "start": "13:00",
+          "end": "14:00",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Pulvinar neque laoreet suspendisse interdum consectetur libero. Lectus vestibulum mattis ullamcorper velit sed ullamcorper.",
+          "creator": "96b9ed9a-ae11-4861-9ecf-ccb0b016d0be"
+        },
+        {
+          "id": "32bd75cd-9beb-436c-812f-26006a6cab04",
+          "name": "Peng's Third Event",
+          "date": "2022-11-01",
+          "place": "Minneapolis, MN",
+          "start": "12:00",
+          "end": "15:00",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Pulvinar neque laoreet suspendisse interdum consectetur libero. Lectus vestibulum mattis ullamcorper velit sed ullamcorper.",
+          "creator": "96b9ed9a-ae11-4861-9ecf-ccb0b016d0be"
         }
       ],
-      "invitations": [
-        {
-          "event": {
-            "id": "c5631b58-58e5-487c-89fd-2ff155ce0da2",
-            "name": "Past Event",
-            "date": "2022-10-11",
-            "place": "Canada",
-            "start": "00:00",
-            "end": "12:00",
-            "description": "ALL DAY WOOO",
-            "creator": "92dd59ac-a3ca-493a-92f1-62718ddfe547"
-          },
-          "accepted": true
-        },
-        {
-          "event": {
-            "id": "ba8cbe01-fae1-444b-a238-4cc27daa447b",
-            "name": "Timberwolves vs Lakers",
-            "date": "2022-10-12",
-            "place": "Anoka, MN",
-            "start": "17:00",
-            "end": "18:00",
-            "description": "Watch the Timberwolves game vs the Lakers on Bally Sports.",
-            "creator": "37e78f4e-1727-4dbb-9817-a8de4d8f9ba6"
-          },
-          "accepted": true
-        },
-        {
-          "event": {
-            "id": "b66ff89b-9467-4b60-93a3-a039a4ac0d4b",
-            "name": "New Guy",
-            "date": "2022-10-13",
-            "place": "Minneapolis, MN",
-            "start": "13:00",
-            "end": "14:00",
-            "description": "Do something in Minneapolis. ",
-            "creator": "92dd59ac-a3ca-493a-92f1-62718ddfe547"
-          },
-          "accepted": true
-        }
-      ]
+      "invitations": []
     },
     {
-      "id": "37e78f4e-1727-4dbb-9817-a8de4d8f9ba6",
+      "id": "9c741bb2-264b-42ce-98e9-16c334fe4d2d",
       "username": "user",
       "password": "password",
       "events": [
         {
-          "id": "ba8cbe01-fae1-444b-a238-4cc27daa447b",
-          "name": "Timberwolves vs Lakers",
-          "date": "2022-10-12",
-          "place": "Anoka, MN",
-          "start": "17:00",
-          "end": "18:00",
-          "description": "Watch the Timberwolves game vs the Lakers on Bally Sports.",
-          "creator": "37e78f4e-1727-4dbb-9817-a8de4d8f9ba6"
+          "id": "d7322da3-b102-4c5f-baa3-830586ecb133",
+          "name": "User's Christmas Event ",
+          "date": "2022-12-25",
+          "place": "Arden Hills, MN",
+          "start": "11:00",
+          "end": "17:00",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Pulvinar neque laoreet suspendisse interdum consectetur libero. Lectus vestibulum mattis ullamcorper velit sed ullamcorper.",
+          "creator": "9c741bb2-264b-42ce-98e9-16c334fe4d2d"
         }
       ],
       "invitations": [
         {
           "event": {
-            "id": "e0e6e010-7fbd-49d9-a08c-084854e2d00b",
-            "name": "Peng's First Event",
-            "date": "2023-01-21",
-            "place": "Home",
-            "start": "11:00",
-            "end": "23:59",
-            "description": "",
-            "creator": "12b3a3e8-27a6-476e-8c69-33bbd6045c93"
+            "id": "da6aa694-26e4-4262-9cd9-e3e979da92d3",
+            "name": "Peng's Second Event",
+            "date": "2022-10-22",
+            "place": "St. Paul, MN",
+            "start": "13:00",
+            "end": "14:00",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Pulvinar neque laoreet suspendisse interdum consectetur libero. Lectus vestibulum mattis ullamcorper velit sed ullamcorper.",
+            "creator": "96b9ed9a-ae11-4861-9ecf-ccb0b016d0be"
+          },
+          "accepted": true
+        },
+        {
+          "event": {
+            "id": "32bd75cd-9beb-436c-812f-26006a6cab04",
+            "name": "Peng's Third Event",
+            "date": "2022-11-01",
+            "place": "Minneapolis, MN",
+            "start": "12:00",
+            "end": "15:00",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Pulvinar neque laoreet suspendisse interdum consectetur libero. Lectus vestibulum mattis ullamcorper velit sed ullamcorper.",
+            "creator": "96b9ed9a-ae11-4861-9ecf-ccb0b016d0be"
           },
           "accepted": true
         }
       ]
-    },
-    {
-      "id": "92dd59ac-a3ca-493a-92f1-62718ddfe547",
-      "username": "new",
-      "password": "guy",
-      "events": [
-        {
-          "id": "b66ff89b-9467-4b60-93a3-a039a4ac0d4b",
-          "name": "New Guy",
-          "date": "2022-10-13",
-          "place": "Minneapolis, MN",
-          "start": "13:00",
-          "end": "14:00",
-          "description": "Do something in Minneapolis. ",
-          "creator": "92dd59ac-a3ca-493a-92f1-62718ddfe547"
-        },
-        {
-          "id": "c5631b58-58e5-487c-89fd-2ff155ce0da2",
-          "name": "Past Event",
-          "date": "2022-10-11",
-          "place": "Canada",
-          "start": "00:00",
-          "end": "12:00",
-          "description": "ALL DAY WOOO",
-          "creator": "92dd59ac-a3ca-493a-92f1-62718ddfe547"
-        }
-      ],
-      "invitations": []
     }
   ]
 }
