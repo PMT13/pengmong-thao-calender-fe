@@ -19,6 +19,19 @@
       "invitations": [
         {
           "event": {
+            "id": "c5631b58-58e5-487c-89fd-2ff155ce0da2",
+            "name": "Past Event",
+            "date": "2022-10-11",
+            "place": "Canada",
+            "start": "00:00",
+            "end": "12:00",
+            "description": "ALL DAY WOOO",
+            "creator": "92dd59ac-a3ca-493a-92f1-62718ddfe547"
+          },
+          "accepted": true
+        },
+        {
+          "event": {
             "id": "ba8cbe01-fae1-444b-a238-4cc27daa447b",
             "name": "Timberwolves vs Lakers",
             "date": "2022-10-12",
@@ -90,6 +103,16 @@
           "start": "13:00",
           "end": "14:00",
           "description": "Do something in Minneapolis. ",
+          "creator": "92dd59ac-a3ca-493a-92f1-62718ddfe547"
+        },
+        {
+          "id": "c5631b58-58e5-487c-89fd-2ff155ce0da2",
+          "name": "Past Event",
+          "date": "2022-10-11",
+          "place": "Canada",
+          "start": "00:00",
+          "end": "12:00",
+          "description": "ALL DAY WOOO",
           "creator": "92dd59ac-a3ca-493a-92f1-62718ddfe547"
         }
       ],
