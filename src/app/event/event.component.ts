@@ -21,6 +21,8 @@ export class EventComponent implements OnInit {
   date!: string;
   description!: string;
   place!: string;
+  start!: string;
+  end!: string;
 
   constructor(private modalService: NgbModal, private data: DataService) {}
 
@@ -35,6 +37,8 @@ export class EventComponent implements OnInit {
     this.date = this.event.date;
     this.description = this.event.description;
     this.place = this.event.place;
+    this.start = this.event.start;
+    this.end = this.event.end;
   }
 
   open(content:any) {
@@ -59,6 +63,8 @@ export class EventComponent implements OnInit {
         name: this.name,
         date: this.date,
         place: this.place,
+        start: this.start,
+        end: this.end,
         description: this.description,
         creator: this.event.creator
       }

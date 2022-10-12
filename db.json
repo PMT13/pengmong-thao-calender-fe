@@ -10,6 +10,8 @@
           "name": "Peng's First Event",
           "date": "2023-01-21",
           "place": "Home",
+          "start": "11:59",
+          "end": "23:59",
           "description": "Do nothing and just relax.",
           "creator": "12b3a3e8-27a6-476e-8c69-33bbd6045c93"
         }
@@ -21,8 +23,23 @@
             "name": "Timberwolves vs Lakers",
             "date": "2022-10-12",
             "place": "Anoka, MN",
+            "start": "17:01",
+            "end": "18:00",
             "description": "Watch the Timberwolves game vs the Lakers on Bally Sports.",
             "creator": "37e78f4e-1727-4dbb-9817-a8de4d8f9ba6"
+          },
+          "accepted": true
+        },
+        {
+          "event": {
+            "id": "b66ff89b-9467-4b60-93a3-a039a4ac0d4b",
+            "name": "New Guy",
+            "date": "2022-10-13",
+            "place": "Minneapolis, MN",
+            "start": "13:00",
+            "end": "14:00",
+            "description": "Do something in Minneapolis. ",
+            "creator": "92dd59ac-a3ca-493a-92f1-62718ddfe547"
           },
           "accepted": true
         }
@@ -38,15 +55,9 @@
           "name": "Timberwolves vs Lakers",
           "date": "2022-10-12",
           "place": "Anoka, MN",
+          "start": "17:01",
+          "end": "18:00",
           "description": "Watch the Timberwolves game vs the Lakers on Bally Sports.",
-          "creator": "37e78f4e-1727-4dbb-9817-a8de4d8f9ba6"
-        },
-        {
-          "id": "0de1ab65-0c23-435f-93b9-5365e3aae50a",
-          "name": "B2E Optum Start Date",
-          "date": "2022-12-11",
-          "place": "Eden Prairie, MN",
-          "description": "Expected start date for Optum job. May be subject to change. ",
           "creator": "37e78f4e-1727-4dbb-9817-a8de4d8f9ba6"
         }
       ],
@@ -57,6 +68,8 @@
             "name": "Peng's First Event",
             "date": "2023-01-21",
             "place": "Home",
+            "start": "11:59",
+            "end": "23:59",
             "description": "Do nothing and just relax.",
             "creator": "12b3a3e8-27a6-476e-8c69-33bbd6045c93"
           },
@@ -65,17 +78,19 @@
       ]
     },
     {
-      "id": "b3550cc6-2f57-4f84-98e7-6af2d1abce8b",
-      "username": "user2",
-      "password": "password",
+      "id": "92dd59ac-a3ca-493a-92f1-62718ddfe547",
+      "username": "new",
+      "password": "guy",
       "events": [
         {
-          "id": "c7c3c6db-be52-42f2-8237-a0af95b226ce",
-          "name": "My First Event",
-          "date": "2022-11-11",
-          "place": "State, Country",
-          "description": "My first non-existent event! :D",
-          "creator": "b3550cc6-2f57-4f84-98e7-6af2d1abce8b"
+          "id": "b66ff89b-9467-4b60-93a3-a039a4ac0d4b",
+          "name": "New Guy",
+          "date": "2022-10-13",
+          "place": "Minneapolis, MN",
+          "start": "13:00",
+          "end": "14:00",
+          "description": "Do something in Minneapolis. ",
+          "creator": "92dd59ac-a3ca-493a-92f1-62718ddfe547"
         }
       ],
       "invitations": []

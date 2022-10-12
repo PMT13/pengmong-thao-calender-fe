@@ -5,6 +5,7 @@
       <div class="card-title">
         <strong>{{event.name}}</strong>
         <div>{{event.place}}</div>
+        <div>{{event.start}} - {{event.end}}</div>
       </div>
       <p class="card-text">{{event.description}}</p>
       <div class="btn-group" role="group" *ngIf="isEventList === true">
@@ -19,6 +20,7 @@
       <div class="card-title">
         <strong>{{invite.event.name}}</strong>
         <div>{{invite.event.place}}</div>
+        <div>{{invite.event.start}} - {{invite.event.end}}</div>
         <div *ngIf="isEventList === false">Invited by: {{creator}}</div>
       </div>
       <p class="card-text">{{invite.event.description}}</p>
@@ -47,6 +49,14 @@
         <label for="date">Date of Event:</label>
         <div class="input-group">
           <input id="date" name="date" class="form-control" type="date" [(ngModel)]="date" required>
+        </div>
+        <label for="start">Start Time:</label>
+        <div class="input-group">
+          <input id="start" name="start" class="form-control" type="time" [(ngModel)]="start">
+        </div>
+        <label for="end">End Time:</label>
+        <div class="input-group">
+          <input id="end" name="end" class="form-control" type="time" [(ngModel)]="end">
         </div>
         <label for="place">Location:</label>
         <div class="input-group">
