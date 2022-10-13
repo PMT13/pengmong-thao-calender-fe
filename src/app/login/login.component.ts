@@ -17,6 +17,7 @@ export class LoginComponent implements OnInit,OnDestroy {
   accountList!: IAccount[];
   errorMsg!: string;
   error: boolean = false;
+  isLogin: boolean = true;
 
   sub: Subscription;
 
@@ -87,6 +88,13 @@ export class LoginComponent implements OnInit,OnDestroy {
         this.error = true;
       }
     });
+  }
+
+  changeLogin(){
+    this.isLogin = !this.isLogin;
+    this.username = "";
+    this.password = "";
+    this.error = false;
   }
 }
 
